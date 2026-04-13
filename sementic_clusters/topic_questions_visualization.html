@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Topic Questions Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 24px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .header {
+      background: #1e3a8a;
+      color: white;
+      padding: 20px 24px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header p {
+      margin: 8px 0 0 0;
+      opacity: 0.9;
+    }
+    .content {
+      padding: 20px 24px;
+    }
+    .category {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      background: #fafafa;
+    }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      font-weight: 600;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    .count {
+      font-size: 12px;
+      color: #374151;
+      background: #dbeafe;
+      padding: 4px 8px;
+      border-radius: 999px;
+    }
+    ul {
+      margin: 0;
+      padding: 0 24px 16px 40px;
+    }
+    li {
+      margin: 6px 0;
+      line-height: 1.45;
+    }
+    .chart-wrap {
+      margin-top: 28px;
+      border-top: 2px solid #e5e7eb;
+      padding-top: 20px;
+    }
+    .chart-title {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .footer {
+      padding: 14px 24px 20px 24px;
+      color: #6b7280;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Questions by Topic</h1>
+      <p>Total Questions: 826 | Total Topics: 45</p>
+    </div>
+
+    <div class="content">
+      
+    <details class="category">
+      <summary>
+        <span class="name">happiness</span>
+        <span class="count">68 questions</span>
+      </summary>
+      <ul>
+        <li>Do I have a moral obligation to take full responsibility for my own happiness instead of blaming circumstances?</li>
+<li>Is it wrong to rely on others to fix my problems rather than handling them myself?</li>
+<li>Should I feel morally responsible for not using the talents or opportunities God (or my faith) gave me?</li>
+<li>Is it ethical to avoid personal growth because “that’s just how I am”?</li>
+<li>Am I morally responsible if I choose a career just for money instead of meaning?</li>
+<li>Should I follow my passion even if it’s unstable or risky?</li>
+<li>Is it wrong to ignore my talents if I don’t enjoy using them?</li>
+<li>Is it selfish to prioritize my own goals over helping others?</li>
+<li>Should I stay in a stable path or take risks to grow?</li>
+<li>How do I know if I’m making the “right” decision morally?</li>
+<li>How much of my success do I owe to my own hard work versus the help of others?</li>
+<li>How much should I sacrifice now for future goals?</li>
+<li>Should I sacrifice my future goals now to help someone in immediate need?</li>
+<li>Is there a moral duty to invest in my education or skills even if it costs me now?</li>
+<li>Should I prioritize my own growth over keeping everyone else happy?</li>
+<li>Is it wrong to compare myself to others?</li>
+<li>Is it selfish to pursue a career change that fulfills me but might reduce my income?</li>
+<li>Should I prioritize my own happiness if it means disappointing people who depend on me?</li>
+<li>Is it a moral failing to not live up to my full &quot;potential&quot;?</li>
+<li>How much discipline is morally expected of me?</li>
+<li>Is it morally acceptable to exaggerate my qualifications slightly to get a job I know I can do well?</li>
+<li>Should I feel guilty for being happy when there is so much suffering in the world?</li>
+<li>If I do the right thing for the wrong reasons (like seeking praise), does it still count?</li>
+<li>Is it healthy to feel guilty for prioritizing my own needs over others&#x27; expectations?</li>
+<li>Is it morally problematic to feel happy about someone else&#x27;s misfortune if they wronged me?</li>
+<li>How do you know you’re making the right decision?</li>
+<li>Can doing good works now make up for harmful choices I made earlier in life?</li>
+<li>Is it morally acceptable to want to live as long as possible at any cost?</li>
+<li>Should I pursue pleasure if it conflicts with moral values?</li>
+<li>Is a simple, quiet life more morally valuable than an ambitious one?</li>
+<li>Should I sacrifice comfort today for a better life later?</li>
+<li>Is it wrong to want a good life for myself if others are suffering?</li>
+<li>Should I change careers or lifestyle to find more meaning?</li>
+<li>Is happiness the goal of life, or something deeper?</li>
+<li>Is it wrong to live only for personal happiness?</li>
+<li>Should I feel obligated to contribute to something bigger than myself to live a meaningful life?</li>
+<li>Should I prioritize personal happiness or making a difference in the world when they conflict?</li>
+<li>When does the pursuit of meaning justify sacrificing short-term happiness or relationships?</li>
+<li>Is it irresponsible to leave a stable job to pursue work that feels more meaningful but pays less?</li>
+<li>Is it selfish to spend your life pursuing artistic or creative passions that don&#x27;t contribute to society materially?</li>
+<li>Is it selfish to prioritize my own happiness if it means others might be disappointed?</li>
+<li>Should I stay in a stable but unfulfilling situation for the sake of others who depend on me?</li>
+<li>When does pursuing happiness become hedonistic or harmful to my long-term well-being?</li>
+<li>Should I feel guilty for being happy when others around me are suffering?</li>
+<li>When does comparing my happiness to others&#x27; become unproductive or envious?</li>
+<li>Is it wrong to seek happiness through material things if it doesn&#x27;t hurt anyone?</li>
+<li>Should I encourage a loved one to pursue what makes them happy, even if I think it&#x27;s risky?</li>
+<li>When does the pressure to be happy become a burden rather than a goal?</li>
+<li>How do I balance seeking my own happiness with being present for others&#x27; pain?</li>
+<li>Can I be truly happy if I am not living a &quot;virtuous&quot; life?</li>
+<li>Is it wrong to prioritize my own happiness over the needs of my community?</li>
+<li>Can money actually buy the kind of security that leads to happiness?</li>
+<li>Is &quot;contentment&quot; better than &quot;ambition&quot; for a moral life?</li>
+<li>How do I balance living for &quot;today&quot; versus planning for &quot;tomorrow&quot;?</li>
+<li>Should we prioritize our own happiness over the expectations and happiness of our family?</li>
+<li>Is choosing personal happiness over social obligation ever truly justified?</li>
+<li>Can you be genuinely happy if others around you are suffering?</li>
+<li>Is the pursuit of happiness a fundamental right, or is it a luxury we earn through responsibility?</li>
+<li>Should I stay in a job I hate for financial security, or risk everything to pursue what makes me happy?</li>
+<li>Is happiness something we should actively chase, or something that comes as a byproduct of living well?</li>
+<li>Is it shallow to prioritize feeling good over achieving something meaningful or difficult?</li>
+<li>Can someone who has caused harm to others ever deserve to be truly happy?</li>
+<li>Is it wrong to sacrifice my children&#x27;s stability to pursue my own happiness through major life changes?</li>
+<li>Is it wrong to curate my social media to show only the best parts of my life?</li>
+<li>Is it wrong to benefit from a system that creates inequality, even if I didn&#x27;t design it?</li>
+<li>Is it wrong to prioritize my own career goals over a partner’s career goals?</li>
+<li>Is it wrong to prioritize my happiness over family expectations?</li>
+<li>“How much should I sacrifice for my family versus my own happiness?”</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">relationship</span>
+        <span class="count">62 questions</span>
+      </summary>
+      <ul>
+        <li>When does setting a boundary cross into being isolating or unkind?</li>
+<li>Can I morally justify &quot;ghosting&quot; someone if I feel the relationship is becoming toxic?</li>
+<li>When does compromise become a betrayal of my principles?</li>
+<li>Is it wrong to feel relieved when a difficult relationship ends, even if it hurts the other person?</li>
+<li>Is it wrong to find meaning in relationships if they might not last forever?</li>
+<li>Is it morally okay to leave a relationship that&#x27;s &quot;good on paper&quot; but doesn&#x27;t make me happy?</li>
+<li>Is it morally acceptable to leave a stable marriage simply because you no longer feel happy?</li>
+<li>When does using technology to stay connected become a substitute for real relationships?</li>
+<li>How do I build genuine connections in a world where many interactions feel superficial?</li>
+<li>Should I stay in an unhappy marriage for the sake of the family unit?</li>
+<li>“Should I stay in a marriage for the sake of my kids?”</li>
+<li>Is it ethical to have children if you&#x27;re not in a stable relationship?</li>
+<li>I don’t know how to leave a toxic relationship, what should I do?</li>
+<li>Is divorce ever the right choice?</li>
+<li>Should couples stay together no matter what?</li>
+<li>Is it wrong to marry for practical reasons instead of love?</li>
+<li>How important is commitment morally?</li>
+<li>Is remarriage morally acceptable?</li>
+<li>Is staying unhappy better than breaking a commitment?</li>
+<li>Can love justify breaking promises?</li>
+<li>Is emotional distance a form of betrayal?</li>
+<li>What makes a marriage morally strong?</li>
+<li>Is it morally wrong to stay in a marriage &quot;for the kids&quot; if the relationship is unhappy but not abusive?</li>
+<li>Should I feel obligated to work on my marriage even if I&#x27;m no longer in love, because of vows I made?</li>
+<li>When does compromise in marriage become losing myself or tolerating disrespect?</li>
+<li>Is it okay to seek emotional support outside my marriage if my partner isn&#x27;t meeting my needs?</li>
+<li>Should financial decisions in marriage always be made jointly, even if one partner earns significantly more?</li>
+<li>Is it morally acceptable to divorce for reasons other than abuse or infidelity, like growing apart?</li>
+<li>When does supporting my spouse&#x27;s dreams become enabling choices that hurt our family?</li>
+<li>How do I balance my individual growth with the commitments and compromises marriage requires?</li>
+<li>Is it okay to love one child more than another, as long as I treat them equally?</li>
+<li>Should I be expected to share all my finances with my spouse?</li>
+<li>Is it moral to prioritize my marriage over my relationship with my children?</li>
+<li>Is it wrong to want a divorce simply because I am no longer &quot;in love&quot;?</li>
+<li>Is it wrong to consider divorce after a single serious betrayal, even if your partner is genuinely remorseful?</li>
+<li>Can a marriage survive if one partner has fundamentally changed their values or beliefs over time?</li>
+<li>Is it morally acceptable to stay married to someone you no longer love but still respect and care for as a person?</li>
+<li>Are open relationships or polyamory morally defensible?</li>
+<li>Is cheating always wrong, even in a broken relationship?</li>
+<li>Does intention matter more than action in relationships?</li>
+<li>Is physical intimacy a moral responsibility or personal choice? </li>
+<li>Is it morally okay to be intimate with someone if I&#x27;m not sure about long-term compatibility?</li>
+<li>Should I feel obligated to be sexually available to my partner if I&#x27;m not in the mood?</li>
+<li>When does casual dating become hurtful to others or to myself?</li>
+<li>Is it wrong to have preferences or deal-breakers in a partner that others might judge as superficial?</li>
+<li>When does jealousy in a relationship become controlling rather than caring?</li>
+<li>Is it morally acceptable to end a relationship because of sexual incompatibility?</li>
+<li>Should I feel pressured to define a relationship on someone else&#x27;s timeline if I&#x27;m not ready?</li>
+<li>When does exploring my sexuality become disrespectful to my partner or my values?</li>
+<li>How do I navigate physical intimacy in a way that honors both my desires and my boundaries?</li>
+<li>Is it &quot;cheating&quot; to have a deep emotional connection with someone else if nothing physical happens? </li>
+<li>Can a relationship truly be &quot;equal&quot; if one person earns all the money?</li>
+<li>Is it wrong to have sexual preferences that my partner doesn&#x27;t share? </li>
+<li>Is it moral to keep a &quot;backup plan&quot; or &quot;escape fund&quot; in a committed relationship?</li>
+<li>Is it wrong to stay in a relationship where the emotional connection is strong but the physical relationship is unfulfilling?</li>
+<li>Is it a betrayal to develop strong emotional intimacy with someone outside your relationship, even without physical involvement?</li>
+<li>How do partners navigate very different needs for intimacy without one feeling pressured and the other feeling rejected?</li>
+<li>Is it ethical to enter a new romantic relationship without disclosing that you are still legally married?</li>
+<li>Is it wrong to end a long-term relationship primarily because your physical needs are no longer compatible?</li>
+<li>Can an open relationship ever be truly equal, or does it always favor one partner over the other?</li>
+<li>Is it morally acceptable to remain in a relationship for companionship when you know you are no longer romantically in love?</li>
+<li>How do I handle a situation where my partner and I have very different views on the role of physical intimacy in our relationship?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">forgive</span>
+        <span class="count">58 questions</span>
+      </summary>
+      <ul>
+        <li>Should I apologize for snapping at someone if I was just having a bad day?</li>
+<li>Should I apologize for something I regret even if the other person doesn&#x27;t know I did it?</li>
+<li>How do I forgive myself for past decisions that I can&#x27;t undo?</li>
+<li>Is it wrong to keep punishing myself even after I’ve sought forgiveness?</li>
+<li>Is it possible to redeem yourself in the eyes of someone you deeply hurt, even if they never forgive you?</li>
+<li>Is it wrong to forgive myself for something I did if the person I hurt hasn&#x27;t forgiven me?</li>
+<li>Does everyone truly deserve a second chance, regardless of what they did?</li>
+<li>Is it possible to forgive someone who hasn&#x27;t apologized?</li>
+<li>Is it wrong to refuse to forgive a parent for childhood trauma?</li>
+<li>Does forgiving someone mean I have to let them back into my life?</li>
+<li>Is it selfish to seek forgiveness just to clear my own conscience?</li>
+<li>Can I forgive myself for a mistake that ended a friendship?</li>
+<li>Is there such a thing as an &quot;unforgivable&quot; act?</li>
+<li>If I hurt someone badly in the past and they&#x27;ve moved on, do I still owe them an apology?</li>
+<li>Is it possible to truly redeem myself for past wrongs if the people I hurt are no longer in my life?</li>
+<li>If I&#x27;ve genuinely changed, do I still have to accept that people from my past may never forgive me?</li>
+<li>Will I ever be able to forgive myself for the worst things I’ve done?</li>
+<li>Is it morally wrong to keep punishing myself after I’ve asked for forgiveness?</li>
+<li>Should I forgive myself even if the people I hurt haven’t forgiven me?</li>
+<li>Is it okay to forgive myself quickly, or must I suffer first?</li>
+<li>Is self-forgiveness selfish if others are still hurting?</li>
+<li>Can I forgive myself if others don’t?</li>
+<li>Do I have to forgive someone who hurt me if they haven&#x27;t apologized or changed?</li>
+<li>Is it weak to forgive someone who keeps repeating the same harmful behavior?</li>
+<li>Should I forgive myself for a mistake that had serious consequences for others?</li>
+<li>Can I forgive someone but still choose not to have them in my life?</li>
+<li>Should I feel pressured to forgive because of my religious or cultural beliefs?</li>
+<li>Is it fair to expect forgiveness from someone I hurt just because I&#x27;ve apologized?</li>
+<li>How do I forgive someone when what they did feels unforgivable?</li>
+<li>When does forgiveness enable further harm rather than promote healing?</li>
+<li>Am I obligated to forgive someone who has genuinely apologized but hurt me very deeply?</li>
+<li>Should I forgive a family member who repeatedly apologizes but keeps repeating the same hurtful behavior?</li>
+<li>Is it wrong to hold a grudge against someone who wronged me years ago and has since become a better person?</li>
+<li>Can I forgive someone for my own peace of mind without ever telling them I&#x27;ve forgiven them?</li>
+<li>Is it selfish to refuse to forgive someone because they haven&#x27;t acknowledged the full extent of their harm?</li>
+<li>Should I pressure my child to forgive a classmate who bullied them, even if they&#x27;re not ready?</li>
+<li>Is withholding forgiveness ever a healthy way to protect myself, or does it only harm me in the end?</li>
+<li>Is it fair to expect forgiveness from someone you&#x27;ve hurt badly, even after a sincere apology?</li>
+<li>How do I forgive myself for past lack of self-control that hurt people I love?</li>
+<li>Is forgiveness required within families?</li>
+<li>How do I forgive myself for a past relationship where I was the &quot;bad guy&quot;? </li>
+<li>Is it morally required to forgive someone who has wronged you, even if they haven&#x27;t apologized?</li>
+<li>Is it morally required to forgive others?</li>
+<li>Can you forgive without reconciliation?</li>
+<li>Does forgiveness depend on apology?</li>
+<li>Is forgiving someone letting them off the hook?</li>
+<li>Can some actions be unforgivable?</li>
+<li>Is forgiving yourself harder than forgiving others?</li>
+<li>How do you forgive someone who hurt you deeply?</li>
+<li>Do I owe forgiveness to someone who hurt me if they&#x27;ve genuinely apologized and changed?</li>
+<li>Is it weak to forgive someone who hasn&#x27;t shown remorse or made amends?</li>
+<li>When does holding a grudge protect me versus just keeping me stuck in pain?</li>
+<li>Is it fair to expect someone to &quot;get over&quot; a hurt quickly just because I&#x27;ve apologized?</li>
+<li>Should I forgive a family member for the sake of family gatherings, even if I&#x27;m not ready?</li>
+<li>When does forgiving someone enable them to continue harmful behavior?</li>
+<li>Is it morally required to forgive someone who hurt me if my faith tradition emphasizes forgiveness?</li>
+<li>Should I forgive myself for hurting someone else even if they haven&#x27;t forgiven me?</li>
+<li>How do I forgive someone when what they did feels unforgivable, but I want to move forward?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">treatment</span>
+        <span class="count">55 questions</span>
+      </summary>
+      <ul>
+        <li>Should I donate my organs, or is there a moral reason to keep the body intact after death?</li>
+<li>Is there a moral obligation to take care of your own health?</li>
+<li>Should someone be allowed to choose assisted suicide if they’re suffering? </li>
+<li>Is it ethical to use medical technology to choose the traits of a future child? </li>
+<li>Is it moral to keep a loved one on life support if there is no hope for recovery?</li>
+<li>Should organ donation be mandatory to save lives, or is bodily autonomy more important?</li>
+<li>Is it ethical to spend millions on life-extending treatments while others lack basic care?</li>
+<li>How do I find comfort in the face of a terminal diagnosis?</li>
+<li>Is abortion ever morally justified, and under what circumstances?</li>
+<li>Should assisted suicide or euthanasia be legal for the terminally ill?</li>
+<li>Is the death penalty ever morally acceptable?</li>
+<li>Is abortion ever morally justified according to religious teachings?</li>
+<li>Does my faith consider the death penalty acceptable in any case?</li>
+<li>Is euthanasia ever compatible with religious beliefs?</li>
+<li>Is the death penalty morally acceptable?</li>
+<li>Is risking your life for others morally required or optional?</li>
+<li>Is suicide always morally wrong, or are there exceptions?</li>
+<li>Is it morally acceptable to prioritize quality of life over prolonging life at all costs?</li>
+<li>Should someone be allowed to refuse life-saving treatment based on their personal beliefs?</li>
+<li>Is it morally different to let someone die versus actively causing death in end-of-life situations?</li>
+<li>Should parents be allowed to make life-or-death medical decisions for a severely ill infant?</li>
+<li>Is it ethical to use extraordinary measures to keep someone alive if they have no hope of recovery?</li>
+<li>Is it ethical to keep a loved one on life support when there is no hope of recovery?</li>
+<li>Is it ethical to prioritize your own life over others in a dangerous survival situation?</li>
+<li>Is it morally acceptable to refuse a blood transfusion for yourself based on religious beliefs?</li>
+<li>Do people have an inherent right to end their own lives on their own terms?</li>
+<li>Is it wrong to bring a child into the world knowing they will face significant suffering due to a genetic condition?</li>
+<li>Should society provide the means for a dignified death to those who are terminally ill and requesting it?</li>
+<li>Is it ethical to keep a person on life support against their previously stated wishes?</li>
+<li>Should parents be allowed to refuse medical treatment for a child on religious grounds?</li>
+<li>Who should have the right to make decisions for someone who is incapacitated?</li>
+<li>Should I support &quot;Death with Dignity&quot; laws for a terminally ill relative?</li>
+<li>“Would it be wrong to refuse medical treatment for a serious illness?”</li>
+<li>Should life support always be continued if possible?</li>
+<li>Should parents be allowed to deny treatment for their children?</li>
+<li>Who should make decisions for someone unconscious?</li>
+<li>Is organ donation morally required?</li>
+<li>Should doctors be allowed to refuse to provide treatments that conflict with their personal morals?</li>
+<li>Is it okay to participate in a clinical trial if I might benefit, even if the primary goal is research?</li>
+<li>When is it ethical to withhold medical information from a patient &quot;for their own good&quot;?</li>
+<li>Should parents be able to refuse vaccinations for their children based on personal beliefs?</li>
+<li>Should mental health treatment be held to the same standards of consent as physical health treatment?</li>
+<li>When does a patient&#x27;s right to choose conflict with a healthcare provider&#x27;s duty to do no harm?</li>
+<li>Is it ethical to use placebo treatments if they might help, even if they&#x27;re not &quot;real&quot; medicine?</li>
+<li>Should genetic information be used to make decisions about insurance or employment?</li>
+<li>How do I navigate medical decisions for a loved one who can&#x27;t communicate their wishes?</li>
+<li>Should doctors be required to provide treatments they personally find morally objectionable?</li>
+<li>Is it ethical to use experimental treatments on a terminally ill patient who has nothing to lose?</li>
+<li>Should parents have the right to refuse proven medical treatment for their child on religious grounds?</li>
+<li>Is it ethical to withhold a terminal diagnosis from a patient at the family&#x27;s request?</li>
+<li>Is it morally wrong to sell a kidney, even if it&#x27;s your own and it would help someone survive?</li>
+<li>Do healthcare workers have a moral obligation to treat patients who have harmed others?</li>
+<li>Should doctors respect a patient&#x27;s wish to refuse treatment even when it will result in their death?</li>
+<li>Is it ethical for pharmaceutical companies to profit heavily from medications that save lives?</li>
+<li>Should patients be told the full truth about their condition even when that knowledge may cause them serious distress?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">money</span>
+        <span class="count">52 questions</span>
+      </summary>
+      <ul>
+        <li>Do I have a duty to set a good example for my friends and family through responsible living?</li>
+<li>Is there a moral or religious imperative to be responsible with my time, money, and health?</li>
+<li>Should I feel obligated to help a friend who constantly makes poor life choices?</li>
+<li>Is it selfish or morally right to set firm boundaries with family who constantly ask for help?</li>
+<li>How do I balance generosity with self-preservation without becoming selfish?</li>
+<li>Is it okay to say no to helping a friend move if I&#x27;m already overwhelmed with my own responsibilities?</li>
+<li>Should I feel guilty for not wanting to lend money to a relative who has a history of not paying it back?</li>
+<li>Is it wrong to stop helping a friend with their problems when they never seem to take my advice or change?</li>
+<li>Is it wrong to spend money on therapy or self-help if my family needs it more?</li>
+<li>Is it morally okay to spend money on self-care (like therapy or a vacation) when I could donate it to charity?</li>
+<li>Is spending money on luxury self-care items ethical when I could give that money to charity?</li>
+<li>Is it okay to distance myself from &quot;unsuccessful&quot; friends because they influence my mindset negatively?</li>
+<li>How do I stop feeling guilty about money I spent on myself when others in my family are struggling?</li>
+<li>Should I feel guilty for cutting off communication with a sibling who is a negative presence in my life?</li>
+<li>Is it morally required to reconcile with a family member who wronged me for the sake of family unity?</li>
+<li>Do I have a moral obligation to give to the poor?</li>
+<li>Is it wrong to be wealthy while others suffer?</li>
+<li>Should I prioritize my family over strangers in need?</li>
+<li>Is tithing or charity required morally or religiously?</li>
+<li>Is it wrong to spend money on luxury?</li>
+<li>Should I give even when I have little?</li>
+<li>Is earning wealth a moral good or risk?</li>
+<li>Does intention matter more than amount in giving?</li>
+<li>How much of my income should I give to charity before it starts affecting my own family&#x27;s well-being?</li>
+<li>Is it morally better to volunteer my time or donate money if I can only do one?</li>
+<li>Should I feel obligated to help a stranger in need if helping them might enable dependency?</li>
+<li>When does generosity become performative rather than genuinely helpful?</li>
+<li>Should wealthy individuals be expected to give more, or is charity always a personal choice?</li>
+<li>How do I balance providing for my family&#x27;s future with being generous to others now?</li>
+<li>If I inherit wealth built on questionable ethics, do I have a responsibility to give it away?</li>
+<li>Is it more moral to give to a local homeless person or an international charity?</li>
+<li>Should I support businesses that I know pay their workers poorly if it’s all I can afford?</li>
+<li>Is it &quot;just&quot; for some people to be born into wealth while others are born into poverty?</li>
+<li>Should I pay more in taxes if it means better services for the poor?</li>
+<li>How do I handle the tension between wanting to be &quot;charitable&quot; and wanting to be &quot;secure&quot;?</li>
+<li>Should I give money to a homeless person directly, or only donate to organizations I trust?</li>
+<li>Is it ethical to accumulate significant personal wealth when others in the world are starving?</li>
+<li>Do I have a responsibility to donate to causes outside my own country, or should I help locally first?</li>
+<li>Is it moral to leave a large inheritance to your children rather than donating it to charity?</li>
+<li>Should wealthy individuals be morally required to use their resources to solve societal problems?</li>
+<li>Is it hypocritical to advocate for giving while living a visibly wealthy lifestyle?</li>
+<li>Should I help a friend in financial trouble even if their problems are largely a result of their own choices?</li>
+<li>Is there a morally appropriate amount of personal wealth to hold before the rest becomes an ethical burden?</li>
+<li>What does honoring family really mean?</li>
+<li>Can family obligations conflict with personal morals?</li>
+<li>Should I share family secrets or struggles with outsiders if it might help me get support?</li>
+<li>Is it morally acceptable to cut ties with a family member who refuses to respect my boundaries?</li>
+<li>How do I navigate relationships with family members whose political or moral views I strongly disagree with?</li>
+<li>I&#x27;m struggling to keep my family afloat — juggling school, parenting, and a tight budget is more than I can handle alone. I desperately need some practical advice to cope.</li>
+<li>Is it wrong to refuse financial help to a sibling who has repeatedly mismanaged money you&#x27;ve given them before?</li>
+<li>How do I handle a situation where my parents constantly pit siblings against each other?</li>
+<li>How do I set boundaries with family members who see any limit as a rejection of love?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">gambling</span>
+        <span class="count">40 questions</span>
+      </summary>
+      <ul>
+        <li>Do I have a duty to make a difference in the world, or is living quietly okay?</li>
+<li>Can I justify buying a more expensive organic diet for myself while others are hungry?</li>
+<li>Is it ethical to support industries (like gambling or alcohol) that I know harm others?</li>
+<li>Is gambling inherently unethical, or only when taken to excess?</li>
+<li>Should someone with a gambling problem be allowed to manage family finances?</li>
+<li>Is it morally irresponsible to continue gambling when it hasn&#x27;t yet seriously impacted my finances?</li>
+<li>Do we have a duty to preserve life at all costs?</li>
+<li>Does technology make us morally weaker or stronger?</li>
+<li>Do creators deserve compensation in all cases?</li>
+<li>Am I responsible for global poverty?</li>
+<li>Is it morally acceptable to invest in companies that are profitable but have questionable ethics?</li>
+<li>Is it ethical to buy products from countries with poor human rights records?</li>
+<li>Is it wrong to enjoy modern comforts that I know contribute to climate change?</li>
+<li>What do I owe to the generations of people who will live after I am gone?</li>
+<li>Do I have a moral duty to care for the environment?</li>
+<li>Is it wrong to waste food or resources?</li>
+<li>Should I change my lifestyle to reduce harm to the planet?</li>
+<li>Is eating meat morally wrong?</li>
+<li>Do animals have rights similar to humans?</li>
+<li>Is consumerism morally harmful?</li>
+<li>Should I live more simply for ethical reasons?</li>
+<li>Am I responsible for future generations?</li>
+<li>Is harming nature a moral or spiritual issue?</li>
+<li>Do I have a moral obligation to reduce my carbon footprint?”</li>
+<li>“How responsible am I for future generations?”</li>
+<li>What obligations do we have to future generations regarding climate change?</li>
+<li>Do I have a moral obligation to live a minimalist life and reject consumerism?</li>
+<li>Is it morally wrong to have children given concerns about overpopulation and climate change?</li>
+<li>Should I feel guilty for enjoying conveniences (like driving or flying) that harm the environment?</li>
+<li>When does individual action on environmental issues matter versus needing systemic change?</li>
+<li>Is it fair to ask developing nations to limit growth for the sake of the global environment?</li>
+<li>Should I prioritize buying local or sustainable products even if they&#x27;re more expensive?</li>
+<li>When does environmental concern become judgmental of others&#x27; choices or lifestyles?</li>
+<li>Is it morally acceptable to benefit from industries that harm the environment if I personally try to reduce my footprint?</li>
+<li>When does protecting wildlife or ecosystems conflict with human needs or livelihoods?</li>
+<li>How do I stay hopeful and motivated about environmental issues without burning out?</li>
+<li>Am I responsible for the environmental impact of products I buy if there are no affordable alternatives?</li>
+<li>Is it unethical to eat meat if you don&#x27;t have to?</li>
+<li>Is it wrong to own exotic or wild-caught animals as pets?</li>
+<li>Is eating meat a moral failing, or are animals here for human consumption?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">process</span>
+        <span class="count">38 questions</span>
+      </summary>
+      <ul>
+        <li>Should I feel guilty if I keep making the same poor choices without trying to change?</li>
+<li>Am I accountable for missed opportunities?</li>
+<li>Should I be held accountable for impulsive decisions made when I&#x27;m emotionally overwhelmed?</li>
+<li>How much should I judge myself for having &quot;bad thoughts&quot; if I never act on them?</li>
+<li>Should I feel guilty for not having discipline over my impulses?</li>
+<li>Should I feel ashamed of relapsing after months of sobriety, or is relapse just a part of recovery?</li>
+<li>Should I feel guilty for not living up to the standards I preach?</li>
+<li>How do I differentiate between &quot;healthy guilt&quot; and &quot;shame&quot; that holds me back?</li>
+<li>Can I be a person of integrity if I frequently change my mind on moral issues?</li>
+<li>Is feeling guilty after a mistake a healthy moral signal or something I should ignore?</li>
+<li>Does my religion say guilt is useful for repentance or that it can become toxic?</li>
+<li>Should I let guilt control my life after I’ve already apologized?</li>
+<li>Is it wrong to feel guilty about things that aren’t actually my fault?</li>
+<li>Does faith teach me how to process guilt without self-hatred?</li>
+<li>Should I feel guilty for things my parents or society made me feel guilty about?</li>
+<li>Is lingering guilt a sign I haven’t truly repented?</li>
+<li>Does religion distinguish between healthy guilt and unnecessary shame?</li>
+<li>Should I talk to a religious leader about my guilt, or handle it alone?</li>
+<li>Is it morally okay to move on from guilt once I’ve learned the lesson?</li>
+<li>Is feeling guilty always a sign I’ve done something wrong?</li>
+<li>When does guilt motivate positive change versus just causing unnecessary suffering?</li>
+<li>Is it fair to carry guilt for a mistake I made when I was much younger and less mature?</li>
+<li>Should I trust my guilt as a moral compass, or can it sometimes be misleading?</li>
+<li>When does guilt about past decisions prevent me from making good choices now?</li>
+<li>Is it okay to feel guilty for things that are out of my control?</li>
+<li>Should I act on feelings of guilt even if I&#x27;m not sure I actually did something wrong?</li>
+<li>Is it morally significant if I feel guilty about something that others say I shouldn&#x27;t feel bad about?</li>
+<li>When does feeling guilty for my privileges become productive versus paralyzing?</li>
+<li>Is it wrong to try to reduce my guilt feelings if they&#x27;re motivating me to do better?</li>
+<li>I wasn&#x27;t present when a family member needed me most — how do I cope with that guilt?</li>
+<li>I got a promotion that a more experienced colleague deserved — should I feel guilty about accepting it?</li>
+<li>Is survivor guilt a rational response, or is it something I need to work through and release?</li>
+<li>I didn&#x27;t help someone in a moment when I could have — how do I process that guilt constructively?</li>
+<li>How do I know if I&#x27;m seeking redemption for the right reasons versus just to ease my guilt?</li>
+<li>Is seeking redemption more about making the other person feel better, or about relieving my own guilt?</li>
+<li>Is it hypocritical to pursue a moral or spiritual path after years of choices I now deeply regret?</li>
+<li>Is holding onto self-guilt a form of pride or false humility?</li>
+<li>How do I process feelings of anger or desire for revenge without acting on them harmfully?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">meaning</span>
+        <span class="count">35 questions</span>
+      </summary>
+      <ul>
+        <li>How do I know what God (or my purpose) wants me to do with my life?</li>
+<li>Does my religion say every life has equal value regardless of age or health?</li>
+<li>Does religion say all human life is sacred from conception?</li>
+<li>When does life truly begin or end?</li>
+<li>Does suffering have a purpose?</li>
+<li>Who decides the value of a human life?</li>
+<li>When does the desire to preserve life become an imposition on the person suffering?</li>
+<li>Does my religion’s teaching on the afterlife change how I live every day?</li>
+<li>Should I worry about judgment in the afterlife for small sins?</li>
+<li>Does belief in heaven or hell make me more or less compassionate now?</li>
+<li>Does religion say my actions here directly affect my afterlife?</li>
+<li>Should I try to convert others so they can have a good afterlife too?</li>
+<li>Is it okay to doubt the afterlife while still following religious morals?</li>
+<li>Should beliefs about an afterlife influence how I make moral decisions in this life?</li>
+<li>Does believing in an afterlife make it easier or harder to make ethical decisions in this life?</li>
+<li>Can someone live a fully moral life without any belief in an afterlife or divine judgment?</li>
+<li>Does the absence of an afterlife belief make life more or less meaningful?</li>
+<li>Does my faith say a good life includes suffering or only joy?</li>
+<li>Is the meaning of life different for everyone or the same according to religion?</li>
+<li>Does my faith give me a clear purpose for why I exist?</li>
+<li>Does religion say suffering gives life meaning?</li>
+<li>Should I create my own meaning or follow what my faith teaches?</li>
+<li>Is helping others the only real meaning in life?</li>
+<li>Does my religion say life has meaning even if I don’t feel it?</li>
+<li>What is the purpose of life?</li>
+<li>Can you live a good life without religion?</li>
+<li>Does suffering make life more meaningful?</li>
+<li>Do we create our own meaning, or is it given?</li>
+<li>Is it morally significant if my sense of meaning comes from faith, even if others don&#x27;t share it?</li>
+<li>Does the meaning in our lives come from what we do, or from the relationships we invest in?</li>
+<li>Should we live primarily for ourselves, or does true meaning come from serving others?</li>
+<li>Does suffering have meaning, or is meaning something we create in spite of it?</li>
+<li>Can raising children be considered sufficient as a life&#x27;s primary source of meaning and purpose?</li>
+<li>Is the &quot;meaning of life&quot; something I find or something I create?</li>
+<li>Does life have to have a &quot;purpose&quot; to be worth living?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">death</span>
+        <span class="count">31 questions</span>
+      </summary>
+      <ul>
+        <li>Is it normal to feel guilty for being happy after a loved one passes away?</li>
+<li>Is it wrong to fear death if my religion promises an afterlife?</li>
+<li>Should I make decisions based on how they affect my eternal soul?</li>
+<li>Does religion teach that the moment of death is predetermined?</li>
+<li>Should I prepare spiritually for death even if I’m young and healthy?</li>
+<li>Should I live differently knowing death could come at any time?</li>
+<li>Should my family have the final say in my end-of-life care if I can&#x27;t speak for myself?</li>
+<li>Is it selfish to fear death, or is it a natural part of being human?</li>
+<li>If I don&#x27;t believe in life after death, does my behavior now matter less?</li>
+<li>Should I pray or reflect on the sanctity of life before major medical decisions?</li>
+<li>How do I balance my belief in the sanctity of life with compassion for someone who wants to end their suffering?</li>
+<li>Is there a moral obligation to prepare my soul for what comes after death?</li>
+<li>Is it wrong to live only for this life if there is an afterlife?</li>
+<li>Should I fear death less because of what my faith says happens next?</li>
+<li>Is it morally important to talk to my family about my beliefs on the afterlife?</li>
+<li>Is it wrong to live for the hope of reward after death rather than for the good of others now?</li>
+<li>When does comfort from beliefs about life after death become an escape from addressing present suffering?</li>
+<li>Should I respect funeral or burial wishes that conflict with my own beliefs about death?</li>
+<li>Is it morally significant to live in a way that honors the memory of those who have died?</li>
+<li>When does grief for someone who died cross into unhealthy attachment to the past?</li>
+<li>Should beliefs about judgment after death influence how I treat people I disagree with?</li>
+<li>Is it okay to find meaning in rituals about death even if I&#x27;m not sure what I believe about an afterlife?</li>
+<li>When does preparing for death become a distraction from living fully now?</li>
+<li>How do I comfort someone who is afraid of death without imposing my own beliefs?</li>
+<li>Is it wrong to find comfort in the idea of heaven if it reduces your sense of urgency to act justly now?</li>
+<li>Should fear of consequences after death influence how we live our lives?</li>
+<li>Is it harmful or healthy to tell children that deceased loved ones are &#x27;in a better place&#x27;?</li>
+<li>Does the possibility of life after death change how we should value and treat life in the present?</li>
+<li>Is it presumptuous to claim certainty about what happens after we die?</li>
+<li>Should funeral and end-of-life practices respect the beliefs of the deceased over the living family?</li>
+<li>Can someone grieve honestly while also holding sincere beliefs about reunion after death?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">faith</span>
+        <span class="count">28 questions</span>
+      </summary>
+      <ul>
+        <li>According to religious teachings, am I accountable for every small daily choice I make?</li>
+<li>What does my religion say about free will and personal responsibility for sin or mistakes?</li>
+<li>How much should I rely on faith versus logic in big decisions?</li>
+<li>Does my religion require me to sacrifice my boundaries for the sake of others?</li>
+<li>Do religious teachings support having boundaries, or do they emphasize endless giving?</li>
+<li>Is there a religious reason to keep my body or personal decisions completely private?</li>
+<li>Is neglecting my mental or physical health a form of self-disrespect according to my faith?</li>
+<li>Does religion teach that I must constantly improve myself, or is rest also holy?</li>
+<li>Does my faith require me to care for my body as a temple or gift from God?</li>
+<li>Does religion require me to constantly better myself?</li>
+<li>Is it fair to judge someone for lacking self-control when I struggle with it too?</li>
+<li>Does religion view self-control as a virtue I must practice in every area of life?</li>
+<li>How much self-control is morally required before it becomes unhealthy perfectionism?</li>
+<li>Does my faith teach that self-control is a sign of spiritual maturity?</li>
+<li>Should I judge myself morally for failing at self-control even after trying hard?</li>
+<li>Is self-control only important for big sins, or does it apply to everyday choices?</li>
+<li>Does religion say self-control makes me a better person, or is grace enough?</li>
+<li>Does self-control reflect spiritual strength?</li>
+<li>Does my faith teach that integrity is more important than success or popularity?</li>
+<li>Does religion say integrity builds character or earns divine favor?</li>
+<li>Does God/religion expect perfection or growth?</li>
+<li>Can a person ever truly change their fundamental nature?</li>
+<li>Does my faith say life is sacred no matter how difficult it becomes?</li>
+<li>Does faith require me to protect life at all costs?</li>
+<li>Is questioning the meaning of life a sign of weak faith or healthy doubt?</li>
+<li>Should faith shape all life decisions?</li>
+<li>Is doubt a moral or spiritual failure?</li>
+<li>Can someone be moral without belief in God?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">tell</span>
+        <span class="count">22 questions</span>
+      </summary>
+      <ul>
+        <li>Is it okay to keep secrets from my partner if I believe the truth would cause unnecessary pain?</li>
+<li>Is it okay to tell a friend I can no longer listen to their venting about the same issue?</li>
+<li>Should I tell someone they&#x27;ve crossed a line, or is it better to just quietly distance myself?</li>
+<li>Is it okay to bend the truth to avoid conflict?</li>
+<li>Is it okay to tell a small lie to spare someone&#x27;s feelings if the truth would cause unnecessary pain?</li>
+<li>Is it wrong to keep a secret that someone confided in me if keeping it might enable harm?</li>
+<li>Is it ever okay to lie to protect someone’s feelings?</li>
+<li>Is it dishonest to &quot;fake it until I make it&quot; in a professional setting?</li>
+<li>Is it dishonest to present a confident image professionally when I privately feel insecure and unsure?</li>
+<li>Is it wrong to stay silent when a friend tells a story that I know to be factually incorrect?</li>
+<li>Is hiding past mistakes dishonest?</li>
+<li>Is it wrong to spread information without verifying it?</li>
+<li>Is it okay to keep secrets from family members to protect them from painful information?</li>
+<li>Is it always wrong to tell a &quot;white lie&quot; to keep the peace in a relationship? </li>
+<li>Should I tell a friend if I know their partner is being unfaithful? </li>
+<li>Should I tell the truth even if it hurts?</li>
+<li>Is keeping secrets dishonest?</li>
+<li>When does silence become lying?</li>
+<li>Is it ever okay to lie to protect someone&#x27;s feelings, and if so, when does it cross a line?</li>
+<li>Should I tell a friend their partner is cheating if I&#x27;m not sure and it might destroy their relationship?</li>
+<li>Is it morally wrong to omit information if I&#x27;m not technically lying?</li>
+<li>Is it okay to keep a secret that someone confided in me if revealing it might prevent harm?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">community</span>
+        <span class="count">21 questions</span>
+      </summary>
+      <ul>
+        <li></li>
+<li>Should I compromise my values to fit in with friends or coworkers?</li>
+<li>How do I handle it when my personal values conflict with my company&#x27;s practices?</li>
+<li>Is it a lack of integrity to work for a company whose values I don&#x27;t personally share?</li>
+<li>When does helping others find meaning cross into imposing my values on them?</li>
+<li>Do I have a duty to vote even if I don&#x27;t feel any candidate represents my values?</li>
+<li>Is it okay to distance myself from a community that no longer aligns with my values?</li>
+<li>Should I conform to group norms to maintain harmony, even if I privately disagree?</li>
+<li>When does loyalty to my community conflict with doing what&#x27;s right for individuals?</li>
+<li>Is it wrong to feel more connected to an online community than to people in my physical neighborhood?</li>
+<li>Is it morally significant to participate in traditions I don&#x27;t personally believe in for the sake of community?</li>
+<li>Should I feel obligated to help members of my community even if I disagree with their choices?</li>
+<li>When does protecting my community&#x27;s reputation become covering up wrongdoing?</li>
+<li>Should I feel &quot;loyal&quot; to a community or religion if I no longer share their beliefs?</li>
+<li>How do I balance &quot;fitting in&quot; with a community versus standing up for my own values?</li>
+<li>Is it wrong to feel like I don&#x27;t belong in my community and to stop participating in it?</li>
+<li>Should I compromise my values to fit in with a community I want to be part of?</li>
+<li>Do we owe loyalty to our community even when its values conflict with our personal beliefs?</li>
+<li>Should people who benefit from a community be required to give back to it in some way?</li>
+<li>Is it wrong to claim a right that I&#x27;m not willing to extend to others?</li>
+<li>When does asserting my rights become selfish or dismissive of community needs?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">violence</span>
+        <span class="count">19 questions</span>
+      </summary>
+      <ul>
+        <li>Do we have a moral duty to intervene when we see someone about to harm themselves?</li>
+<li>Does pacifism hold up as a moral position in the face of genocide?</li>
+<li>Is pacifism realistic in a violent world?</li>
+<li>Is violence ever morally justified?</li>
+<li>Is self-defense always acceptable?</li>
+<li>Is it okay to hit someone in self-defense?”</li>
+<li>When, if ever, harming others is morally permissible.</li>
+<li>Is self-defense always morally justified, even when lethal?</li>
+<li>Is it ever morally acceptable to use violence to protect myself or others?</li>
+<li>When does self-defense cross into excessive force or retaliation?</li>
+<li>Is it wrong to support systems (like policing or military) that use violence, even if I believe they&#x27;re necessary?</li>
+<li>Should violent media be restricted to protect vulnerable people, or is that censorship?</li>
+<li>When does anger justify aggressive words or actions, if ever?</li>
+<li>Is it morally different to cause harm accidentally versus intentionally?</li>
+<li>Should someone who committed violence in the past be defined by that act forever?</li>
+<li>When does avoiding violence become enabling injustice by staying silent?</li>
+<li>Should civilians have the right to use lethal force to defend their property?</li>
+<li>Is physically disciplining a child ever justified, or is it always a form of violence?</li>
+<li>Is it wrong to glorify historical figures who used violence to achieve ends we now consider just?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">time</span>
+        <span class="count">18 questions</span>
+      </summary>
+      <ul>
+        <li>Is it acceptable to decline invitations to events that drain me, even if it disappoints others?</li>
+<li>Should I feel guilty for saying &quot;no&quot; to extra volunteer work when I’m already feeling burnt out?</li>
+<li>Is it morally okay to take a personal day from work when I&#x27;m mentally exhausted, even if it inconveniences colleagues?</li>
+<li>Should I feel guilty for taking time for self-care instead of helping others?</li>
+<li>Is taking time for myself selfish?</li>
+<li>Should I feel guilty for resting instead of being productive?</li>
+<li>Is it wrong to take a break from volunteering to recharge, even if others are counting on me?</li>
+<li>Is it acceptable to say no to extra commitments to protect my time for rest and reflection?</li>
+<li>Am I being lazy, or is &quot;doing nothing&quot; a valid form of moral rest?</li>
+<li>Is it selfish to spend my weekend alone when my friends are asking for my company?</li>
+<li>Is it morally problematic to procrastinate on important tasks if it doesn&#x27;t directly hurt anyone else?</li>
+<li>Should I feel guilty for spending hours on social media instead of being productive?</li>
+<li>Is it okay to relax self-control on weekends or special occasions?</li>
+<li>Should I feel guilty for procrastinating?</li>
+<li>Is it wrong to take credit for a group effort if I did the majority of the work?</li>
+<li>Can I ethically use company time for minor personal tasks if my work is always completed on time?</li>
+<li>Should I feel guilty for enjoying privileges that others don&#x27;t have access to?</li>
+<li>Should I limit screen time for moral reasons?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">family</span>
+        <span class="count">16 questions</span>
+      </summary>
+      <ul>
+        <li>﻿I don’t know what to do with my life, what advice do you have for me?</li>
+<li>To what extent am I responsible for the happiness of my parents as they age?</li>
+<li>How much of my personal life should I be required to share with my employer?</li>
+<li>Can I pursue personal goals like going back to school when my family depends heavily on my time and income?</li>
+<li>Should I feel bad for taking time away from my family to focus on my personal growth?</li>
+<li>Is it wrong to pursue a hobby that takes significant time away from my family duties?</li>
+<li>Should I feel guilty for wanting more out of life than what my parents had?</li>
+<li>Should I feel bad for moving away from my aging parents to pursue my career?</li>
+<li>I chose my career over starting a family earlier in life — should I still feel guilty about that now?</li>
+<li>Should I feel guilty for not visiting an aging parent more often when life keeps getting in the way?</li>
+<li>Is it ever too late to change?</li>
+<li>Should I stay in a job I hate because it provides for my family, or seek fulfillment?</li>
+<li>Is it wrong to move away from my struggling hometown for a better life elsewhere?</li>
+<li>Should I feel obligated to care for an aging relative if it significantly impacts my own life and family?</li>
+<li>When does loyalty to my family of origin conflict with commitments to my chosen family or partner?</li>
+<li>Should I feel guilty for not wanting to continue family traditions that don&#x27;t align with my values?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">addiction</span>
+        <span class="count">15 questions</span>
+      </summary>
+      <ul>
+        <li>Is an addiction a &quot;sickness&quot; that deserves pity or a &quot;choice&quot; that deserves accountability?</li>
+<li>Is addiction a sin, a disease, or both?</li>
+<li>Is it my responsibility to help a loved one with an addiction, even if it enables their behavior?</li>
+<li>Is it wrong to distance myself from a friend whose addiction is negatively affecting my life?</li>
+<li>When does supporting someone with an addiction become enabling harmful behavior?</li>
+<li>Should a person in recovery be judged for past mistakes made while struggling with addiction?</li>
+<li>How do I balance compassion for someone with an addiction while protecting my own well-being?</li>
+<li>Should employers be required to accommodate employees struggling with addiction?</li>
+<li>When does concern for a loved one&#x27;s addiction justify intervening in their personal choices?</li>
+<li>Should I tell my family about my struggle with addiction, or is it my personal business to handle on my own?</li>
+<li>Can I be a good parent while privately battling a substance addiction that my children don&#x27;t know about?</li>
+<li>Is it fair to ask my partner to stop drinking at home because it triggers my own addiction struggle?</li>
+<li>Do I have an obligation to warn friends about addictive behaviors I&#x27;ve noticed they may be developing?</li>
+<li>Is it wrong to hide my addiction from a potential employer who asks about health conditions during hiring?</li>
+<li>When does helping a family member become enabling unhealthy patterns?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">contact</span>
+        <span class="count">13 questions</span>
+      </summary>
+      <ul>
+        <li>Should I cut contact with a family member who constantly disrespects my time and energy?</li>
+<li>Is it wrong to block someone on social media who makes me feel bad about myself, even if they&#x27;re family?</li>
+<li>Should I intervene in a stranger&#x27;s parenting if I see them being overly harsh in public?</li>
+<li>Is it wrong to demand that my in-laws follow my specific rules when they are babysitting my children?</li>
+<li>Is it acceptable to limit contact with a toxic family member, even during holidays and important events?</li>
+<li>Should I limit my child&#x27;s screen time even if it causes conflict, because I believe it&#x27;s healthier?</li>
+<li>Is it wrong to use my &quot;connections&quot; to get my child a job over a more qualified stranger?</li>
+<li>Is protecting family worth harming others?</li>
+<li>“Is it wrong to cut off contact with a toxic family member?”</li>
+<li>Is it okay to limit contact with a parent who was emotionally abusive, even if other family members disapprove?</li>
+<li>When does protecting my children from a relative&#x27;s harmful behavior become &quot;alienating&quot; them?</li>
+<li>Is it wrong to cut off contact with a toxic parent, even if it means losing the rest of the family too?</li>
+<li>Do I have an obligation to care for a parent who was abusive to me?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">mistake</span>
+        <span class="count">13 questions</span>
+      </summary>
+      <ul>
+        <li>Is it my responsibility to correct a cashier who gave me too much change back?</li>
+<li>How do I handle the guilt of a mistake I made years ago that I can no longer fix?</li>
+<li>Should I admit a mistake at work if fixing it quietly means no one would ever need to know it happened?</li>
+<li>Should I share my guilt with the person I hurt, or would that just burden them further?</li>
+<li>How can I fix my mistakes?</li>
+<li>How do I know if I’ve done enough to make up for past mistakes?</li>
+<li>Do I need to make amends for every mistake?</li>
+<li>Can someone truly make up for a serious mistake, or are some actions unforgivable?</li>
+<li>Should a person who has changed be judged by their past or their present actions?</li>
+<li>Should a public figure&#x27;s past mistakes disqualify them from leadership if they&#x27;ve shown genuine change?</li>
+<li>Should I make amends with an estranged family member even if the original fault was mostly theirs?</li>
+<li>Should I admit to a small mistake at work if no one noticed and fixing it quietly is possible?</li>
+<li>Should I correct someone who compliments me based on a misunderstanding about me?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">witness</span>
+        <span class="count">13 questions</span>
+      </summary>
+      <ul>
+        <li>Is it morally acceptable to distance myself from people who disrespect my limits?</li>
+<li>Should I confront a neighbor whose behavior is disruptive, or just try to avoid conflict?</li>
+<li>Should I report a coworker&#x27;s minor ethical lapse if it doesn&#x27;t directly affect anyone?</li>
+<li>Is it wrong to stay silent when I witness something unethical but speaking up could cost me my job?</li>
+<li>If I accidentally damaged a parked car and no one saw, am I obligated to leave a note?</li>
+<li>When does sharing opinions online cross into contributing to harassment or misinformation?</li>
+<li>Am I obligated to speak out against social injustices I see online?</li>
+<li>Should I speak up when my community excludes or mistreats someone, even if it risks my standing?</li>
+<li>If I witness a minor injustice at work but staying silent protects my promotion, am I morally obligated to speak up?</li>
+<li>Should I speak up when I witness injustice in my neighborhood, even if it puts me at personal risk?</li>
+<li>When does my right to free speech conflict with someone else&#x27;s right to feel safe?</li>
+<li>How do I stand up for my rights without escalating conflict or harming relationships?</li>
+<li>Should I intervene physically if I witness someone being harassed, or could that make things worse?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">honesty</span>
+        <span class="count">12 questions</span>
+      </summary>
+      <ul>
+        <li>Does religion demand complete honesty in every situation, even small ones?</li>
+<li>Is living with hidden inconsistency a moral problem even if it feels fine?</li>
+<li>Is personal integrity only tested in big moments or in daily choices?</li>
+<li>Is it a betrayal of integrity to pretend to agree with my boss to avoid conflict at work?</li>
+<li>Is it a lack of integrity to let someone believe something flattering about me that isn&#x27;t entirely true?</li>
+<li>Is honesty always the &quot;best policy,&quot; or is it sometimes a weapon? </li>
+<li>Does intention justify dishonesty?</li>
+<li>Is brutal honesty better than kindness?</li>
+<li>Is honesty always the best moral choice?</li>
+<li>Is deception ever morally necessary?</li>
+<li>When does tactful honesty become cowardly avoidance of difficult conversations?</li>
+<li>When does being &quot;brutally honest&quot; become an excuse for being unkind?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">purpose</span>
+        <span class="count">12 questions</span>
+      </summary>
+      <ul>
+        <li>What is your process for making major life decisions?</li>
+<li>Is it wrong to focus on this life instead of the next one?</li>
+<li>Should I search for meaning even if it makes me unhappy?</li>
+<li>Is it wrong to live without a clear sense of purpose?</li>
+<li>Is it morally important to find a &quot;purpose&quot; in life, or is it okay to just enjoy everyday moments?</li>
+<li>When does searching for meaning become a source of anxiety rather than fulfillment?</li>
+<li>Should I feel guilty for not having my life &quot;figured out&quot; while others seem to have clear purpose?</li>
+<li>How do I find meaning in difficult times when everything feels pointless?</li>
+<li>Is it possible to live a meaningful life when you&#x27;re struggling with depression or hopelessness?</li>
+<li>Is it wrong to feel like your life lacks purpose even when you have many blessings others don&#x27;t have?</li>
+<li>How do you find meaning in life when the things you&#x27;ve worked hardest for haven&#x27;t turned out as you hoped?</li>
+<li>Is it possible to find meaning in suffering, or is suffering just a tragedy?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">war</span>
+        <span class="count">12 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to work for a defense contractor or arms manufacturer?</li>
+<li>Is it ever morally justifiable to go to war, and if so, under what conditions?</li>
+<li>Should I support a war effort if I believe the cause is just but disagree with the methods used?</li>
+<li>When does patriotism become nationalism that harms others?</li>
+<li>Is it wrong to profit from industries that support military conflicts?</li>
+<li>Should citizens be held responsible for their government&#x27;s decisions to go to war?</li>
+<li>When does protesting a war become disrespectful to those serving or affected by it?</li>
+<li>Is it morally acceptable to refuse military service based on personal conscience?</li>
+<li>Should humanitarian intervention justify violating a country&#x27;s sovereignty?</li>
+<li>When does remembering past wars honor victims versus perpetuate cycles of conflict?</li>
+<li>How do I process feelings of helplessness about wars happening far away that I can&#x27;t stop?</li>
+<li>Is it wrong to support a war that protects your country even if it causes civilian casualties abroad?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">justice</span>
+        <span class="count">11 questions</span>
+      </summary>
+      <ul>
+        <li>Should society prioritize &quot;punishment&quot; or &quot;rehabilitation&quot; for those who do wrong?</li>
+<li>Can someone who caused harm in their youth be fully redeemed in the eyes of society as an adult?</li>
+<li>Should justice focus on punishment or rehabilitation?</li>
+<li>Do criminals deserve forgiveness?</li>
+<li>Where is the line between justice and vengeance?</li>
+<li>Is revenge ever justified?</li>
+<li>Is it just for society to imprison people for crimes they committed under extreme duress?</li>
+<li>Should violent criminals be treated with compassion, or does justice require punishment above all else?</li>
+<li>Is it moral to take revenge on someone who harmed you if the justice system has failed to act?</li>
+<li>Should violent offenders who have genuinely reformed still be required to serve their full sentence?</li>
+<li>Is revenge ever morally justified?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">indulge</span>
+        <span class="count">10 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to protect my personal space even if it disappoints people I love?</li>
+<li>Is it wrong to indulge in things I know are bad for me?</li>
+<li>Is it wrong to indulge in small pleasures (like junk food or scrolling social media) when I&#x27;m stressed, even if I know it&#x27;s not healthy?</li>
+<li>Is it wrong to use distractions (like TV or shopping) to cope with difficult emotions?</li>
+<li>Is it wrong to indulge in things I know are bad for me?”</li>
+<li>Is it wrong to give in to temptations that only affect me?</li>
+<li>Is it always wrong to cut corners even when no one will notice?</li>
+<li>When does consuming news become unhealthy obsession versus staying informed?</li>
+<li>Is lust always wrong?</li>
+<li>Is it wrong to hold onto anger?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">lack</span>
+        <span class="count">10 questions</span>
+      </summary>
+      <ul>
+        <li>Is blaming external factors (like society or family) a form of moral cowardice?</li>
+<li>When does a habit cross the line from harmless to a lack of self-discipline that affects others?</li>
+<li>When does giving myself grace become making excuses for poor behavior?</li>
+<li>Is it a lack of character if I can’t stick to a diet or exercise routine?</li>
+<li>Is lacking self-control in small daily habits (like scrolling or snacking) a moral failing?</li>
+<li>When does a habit become a moral issue instead of just a personal one?</li>
+<li>Is overeating or lack of discipline a moral failure?</li>
+<li>When does taking responsibility cross into unhealthy self-blame?</li>
+<li>When does holding someone accountable prevent them from moving forward and growing?</li>
+<li>When does helping someone cross into controlling their choices or decisions?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">self</span>
+        <span class="count">10 questions</span>
+      </summary>
+      <ul>
+        <li>How do I know when setting a boundary is self-care versus just being avoidant of responsibility?</li>
+<li>How do I balance self-improvement goals with my current responsibilities without feeling like I&#x27;m neglecting others?</li>
+<li>Is cosmetic surgery self-expression or rejecting how I was created?</li>
+<li>Should I accept myself as I am, or always strive to improve?</li>
+<li>When does focusing on self-improvement become self-absorbed?</li>
+<li>How do I know if I&#x27;m investing in myself or just avoiding responsibilities?</li>
+<li>When does self-care become an excuse for neglecting my duties to others?</li>
+<li>Is it &quot;vanity&quot; or &quot;self-improvement&quot; to undergo cosmetic surgery to feel better about myself?</li>
+<li>How do I balance being kind to myself about my flaws while still working to improve?</li>
+<li>When does seeking belonging become compromising my authentic self?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">use</span>
+        <span class="count">10 questions</span>
+      </summary>
+      <ul>
+        <li>At what point does a &quot;social&quot; habit (like drinking or gaming) become a moral issue?</li>
+<li>Am I morally responsible for my actions if I am under the influence of a substance?</li>
+<li>Is it wrong to use prescription medication to manage my mood instead of &quot;working through it&quot;?</li>
+<li>Is recreational drug use wrong if it only affects you?</li>
+<li>Is recreational drug use a victimless moral choice or a violation of self-respect?</li>
+<li>Does excessive drinking become a moral failing, or is it purely a health issue?</li>
+<li>Is it morally acceptable to use substances to cope with stress if it doesn&#x27;t harm others?</li>
+<li>Is it wrong to keep drinking socially when I know it&#x27;s becoming harder to stop at just one or two?</li>
+<li>Is it okay to use substances recreationally if I believe I&#x27;m in control and it doesn&#x27;t affect my work?</li>
+<li>When does holding onto anger protect me versus just poisoning my own life?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">confess</span>
+        <span class="count">9 questions</span>
+      </summary>
+      <ul>
+        <li>If I make a mistake that no one else notices, is it necessary to confess it if it doesn&#x27;t hurt anyone?</li>
+<li>Is it morally required to admit when I’ve been wrong even if it hurts my image?</li>
+<li>Should I confess an old infidelity if it will destroy my current happy marriage?</li>
+<li>Can I redeem myself in private without telling anyone what I did?</li>
+<li>Should I confess my wrongs even if it causes harm?</li>
+<li>Should I confess a past wrongdoing to my partner that happened before we met, even if it could hurt them?</li>
+<li>Should I disclose my sexual history to a new partner, and if so, how much detail is necessary?</li>
+<li>Should I disclose a past STI to a new partner even if I was treated and am no longer contagious?</li>
+<li>Should I confess things no one would know otherwise?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">background</span>
+        <span class="count">8 questions</span>
+      </summary>
+      <ul>
+        <li>How do I balance being a &quot;good neighbor&quot; with my need for total privacy and solitude?</li>
+<li>Should I prioritize helping people in my community over those in greater need far away?</li>
+<li>Do I have a moral obligation to know my neighbors and help them? </li>
+<li>Is it okay to prioritize my own &quot;tribe&quot; or group over the needs of outsiders?</li>
+<li>Do I have a moral responsibility to get involved in my local community, or is that a personal choice?</li>
+<li>Is it selfish to live in an exclusive community that excludes people based on income or background?</li>
+<li>Do I have an obligation to support local businesses even when cheaper alternatives are available?</li>
+<li>Is it morally acceptable to isolate myself from community life if I prefer solitude?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">embryos</span>
+        <span class="count">8 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to get an abortion if I’m not ready to be a parent? </li>
+<li>Is it wrong to get an abortion simply because I’m not ready to parent?</li>
+<li>Should I support laws protecting unborn life even if it affects my own choices?</li>
+<li>Is it wrong to choose not to have children?</li>
+<li>How should we think about the ethics of IVF, including what happens to unused embryos?</li>
+<li>Is it ethical to use IVF if it involves discarding unused embryos?</li>
+<li>Is it ethical to use IVF if embryos are discarded?</li>
+<li>Is contraception morally wrong?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">good</span>
+        <span class="count">8 questions</span>
+      </summary>
+      <ul>
+        <li>Is it sinful to enjoy comfort and ease?</li>
+<li>Is it morally okay to choose quality of life over length of life?</li>
+<li>What does it mean to live a “good life”?</li>
+<li>Is a good life measured by happiness, success, or moral character?</li>
+<li>Should I judge my life as “good” based on how much I helped others?</li>
+<li>Is living a good life a personal choice or a religious duty?</li>
+<li>Can a life dedicated entirely to pleasure and comfort still be considered a good and meaningful life?</li>
+<li>Is a &quot;good life&quot; measured by what I achieve or by how I treat people?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">parents</span>
+        <span class="count">8 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to bring a child into the world if I know they&#x27;ll face significant hardships?</li>
+<li>Should parents&#x27; rights to raise their children as they see fit ever be overridden by the child&#x27;s rights?</li>
+<li>Should parents impose their beliefs on children?</li>
+<li>Am I obligated to care for an aging parent who was absent or abusive during my childhood?</li>
+<li>Should adult children be allowed to make major life decisions their parents strongly disagree with?</li>
+<li>Do parents have a right to demand involvement in their grandchildren&#x27;s upbringing even when asked to step back?</li>
+<li>How much should parents impose their own values on their children?</li>
+<li>How much influence should my parents have over my adult life decisions?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">rights</span>
+        <span class="count">8 questions</span>
+      </summary>
+      <ul>
+        <li>When does protecting life conflict with respecting a person&#x27;s autonomy?</li>
+<li>Does the &quot;legal&quot; system always represent what is &quot;just&quot;?</li>
+<li>Should individual rights ever be limited for the greater good of society?</li>
+<li>Is it morally okay to advocate for rights for my group while ignoring the rights of others?</li>
+<li>When does protecting rights become enabling harmful behavior?</li>
+<li>When does cultural tradition conflict with universal human rights, and which should prevail?</li>
+<li>Should economic rights (like housing or healthcare) be considered as fundamental as civil liberties?</li>
+<li>Should future generations&#x27; rights influence the decisions I make today?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">online</span>
+        <span class="count">7 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to set strict digital boundaries and not respond to friends’ texts after 8:00 PM?</li>
+<li>“How much privacy should I expect online?”</li>
+<li>How much privacy should I expect online?</li>
+<li>Is anonymity online morally dangerous?</li>
+<li>Should I report harmful content online even if it might seem like overreacting or censorship?</li>
+<li>How do I balance the convenience of technology with concerns about privacy and mental health?</li>
+<li>Is it ethical to use dating apps if I&#x27;m only looking for something temporary? </li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">privacy</span>
+        <span class="count">7 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to share someone&#x27;s personal story on social media without their explicit permission?</li>
+<li>When does privacy in a relationship cross into secrecy that harms trust?</li>
+<li>How much of my &quot;past&quot; do I owe it to my spouse to reveal?</li>
+<li>How do you maintain your individual identity while fully committing to a life shared with another person?</li>
+<li>Is it ethical to hide financial information from your spouse to maintain a sense of personal independence?</li>
+<li>Should couples share all of their passwords and accounts as a sign of trust, or is personal privacy still healthy?</li>
+<li>When does privacy justify not sharing the full truth with a loved one?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">redemption</span>
+        <span class="count">7 questions</span>
+      </summary>
+      <ul>
+        <li>Can someone who has done terrible things ever fully redeem themselves?</li>
+<li>Does my religion offer a path to complete redemption no matter what I’ve done?</li>
+<li>Is redemption only possible through faith, or can good deeds alone achieve it?</li>
+<li>Does religion teach that redemption changes how God (or others) sees me?</li>
+<li>Is redemption a one-time event or a lifelong process?</li>
+<li>Should I help others redeem themselves, or is that only between them and God?</li>
+<li>When does the pursuit of redemption become more about self-image than genuine repair?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">trust</span>
+        <span class="count">7 questions</span>
+      </summary>
+      <ul>
+        <li>Should society or my family ever fully trust someone who has redeemed themselves?</li>
+<li>Is it fair to expect someone to &quot;earn back&quot; trust after betraying it, and how long should that take?</li>
+<li>Is it possible to rebuild trust with someone after a serious betrayal, or is some damage permanent?</li>
+<li>Can I truly forgive someone I still don&#x27;t fully trust?</li>
+<li>How do I learn to trust someone again after they have deeply betrayed me? </li>
+<li>How do I rebuild trust after I&#x27;ve been dishonest, even about something small?</li>
+<li>Should I reconcile with a friend who betrayed me if they ask, even if I&#x27;m not sure I trust them again?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">forgiveness</span>
+        <span class="count">6 questions</span>
+      </summary>
+      <ul>
+        <li>What does true repentance actually require?</li>
+<li>Does my religion say self-forgiveness is required, or is it only God’s job?</li>
+<li>Does faith teach that self-forgiveness comes after genuine repentance?</li>
+<li>Should I seek therapy or spiritual guidance to learn self-forgiveness?</li>
+<li>Does religion say I must forgive myself to move forward in life?</li>
+<li>Does religion require unconditional forgiveness?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">guilty</span>
+        <span class="count">6 questions</span>
+      </summary>
+      <ul>
+        <li>Should I feel guilty for saying “no” to requests that drain me emotionally?</li>
+<li>Should I feel guilty for wanting alone time when my partner or kids need attention?</li>
+<li>Should I feel ashamed for struggling to control my temper with my kids after a long day?</li>
+<li>Is it wrong to hide a &quot;guilty pleasure&quot; habit from my spouse?</li>
+<li>Is it normal to feel guilty for setting boundaries with people I love?</li>
+<li>Should I feel guilty about multiple partners?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">medical</span>
+        <span class="count">6 questions</span>
+      </summary>
+      <ul>
+        <li>Should society allocate limited medical resources based on age, quality of life, or other factors?</li>
+<li>Should quality of life be considered more important than the length of life in medical decisions?</li>
+<li>Is gene editing (CRISPR) &quot;playing God,&quot; or is it a moral imperative to cure diseases?</li>
+<li>Should medical advancements have moral limits?</li>
+<li>Is it morally acceptable to prioritize younger patients over older ones when resources are scarce?</li>
+<li>Should wealthy patients have access to better or faster healthcare simply because they can pay for it?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">thing</span>
+        <span class="count">6 questions</span>
+      </summary>
+      <ul>
+        <li>When is it appropriate to set limits with a coworker who frequently asks for personal favors?</li>
+<li>How do I balance being supportive of a friend in crisis while protecting my own emotional well-being?</li>
+<li>Is it wrong to cut off a friendship that is emotionally draining, even if that person has no one else?</li>
+<li>When does loyalty to a friend conflict with doing the right thing?</li>
+<li>Should I return a favor to someone I don&#x27;t like simply because it&#x27;s the right thing to do?</li>
+<li>Is it wrong to favor one sibling over another if the relationship dynamics are different?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">uploaded</span>
+        <span class="count">6 questions</span>
+      </summary>
+      <ul>
+        <li>Is it wrong to watch pornography?</li>
+<li>“Is it wrong to use AI to do my homework?”</li>
+<li>“Is it okay to pirate movies or music?”</li>
+<li>Is downloading free PDFs to learn when you can’t afford books morally wrong?</li>
+<li>What are your thoughts on the ethics of listening to full audiobooks on platforms like YouTube when they’re available for free but may not be officially uploaded?</li>
+<li>Is it wrong to consume content that may be illegally uploaded?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">mental</span>
+        <span class="count">5 questions</span>
+      </summary>
+      <ul>
+        <li>How much of my own time and energy is it morally okay to give away before it harms me?</li>
+<li>Is it selfish to prioritize my mental health over attending every family gathering?</li>
+<li>Is it morally wrong to neglect my physical or mental health?</li>
+<li>To what degree should I prioritize my mental health over my professional commitments?</li>
+<li>Is it okay to distance myself for mental health?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">parenting</span>
+        <span class="count">5 questions</span>
+      </summary>
+      <ul>
+        <li>After the breakup, I feel completely unprepared to handle the challenges of parenting alone and need guidance on how to move forward.</li>
+<li>Should I stay friends with my ex-spouse for the sake of co-parenting, even if it&#x27;s emotionally difficult?</li>
+<li>Every interaction with my in-laws seems to spark conflict—how do I manage this without hurting my spouse? </li>
+<li>After a breakup, I feel completely unprepared to handle parenting alone—where is the line between asking for help and being a burden? </li>
+<li>Is it wrong to have a close friendship with someone your spouse feels uncomfortable about?</li>
+      </ul>
+    </details>
+    
+
+    <details class="category">
+      <summary>
+        <span class="name">sex</span>
+        <span class="count">5 questions</span>
+      </summary>
+      <ul>
+        <li>Should religion define marriage roles?</li>
+<li>Is &quot;hookup culture&quot; or casual sex inherently damaging to the soul or psyche?</li>
+<li>Is sex before marriage morally wrong?</li>
+<li>Is casual sex harmful morally or spiritually?</li>
+<li>Should religion guide sexual decisions?</li>
+      </ul>
+    </details>
+    
+
+      <div class="chart-wrap">
+        <h2 class="chart-title">Question Count by Topic</h2>
+        <canvas id="topicChart" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="footer">
+      Generated from df_sentences (Question, Topics, Topic_Label)
+    </div>
+  </div>
+
+  <script>
+    const labels = ["happiness", "relationship", "forgive", "treatment", "money", "gambling", "process", "meaning", "death", "faith", "tell", "community", "violence", "time", "family", "addiction", "contact", "mistake", "witness", "honesty", "purpose", "war", "justice", "indulge", "lack", "self", "use", "confess", "background", "embryos", "good", "parents", "rights", "online", "privacy", "redemption", "trust", "forgiveness", "guilty", "medical", "thing", "uploaded", "mental", "parenting", "sex"];
+    const counts = [68, 62, 58, 55, 52, 40, 38, 35, 31, 28, 22, 21, 19, 18, 16, 15, 13, 13, 13, 12, 12, 12, 11, 10, 10, 10, 10, 9, 8, 8, 8, 8, 8, 7, 7, 7, 7, 6, 6, 6, 6, 6, 5, 5, 5];
+
+    const ctx = document.getElementById("topicChart");
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [{
+          label: "Questions",
+          data: counts
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: {
+            ticks: {
+              maxRotation: 70,
+              minRotation: 45
+            }
+          },
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
