@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv311/
+.venv/
+env/
+venv311
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Local data files (do not commit)
+data.json
+LLM Questions.txt
+sementic_clusters/questions.txt
+
+# Optional: ignore all raw data-like files
+# *.csv
+# *.tsv
+# *.parquet
