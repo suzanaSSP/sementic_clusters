@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topic Questions Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: #f5f7fb;
+        color: #1f2937;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 24px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        overflow: hidden;
+      }
+      .header {
+        background: #1e3a8a;
+        color: white;
+        padding: 20px 24px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .header p {
+        margin: 8px 0 0 0;
+        opacity: 0.9;
+      }
+      .content {
+        padding: 20px 24px;
+      }
+      .category {
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        background: #fafafa;
+      }
+      summary {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px;
+        font-weight: 600;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      .count {
+        font-size: 12px;
+        color: #374151;
+        background: #dbeafe;
+        padding: 4px 8px;
+        border-radius: 999px;
+      }
+      ul {
+        margin: 0;
+        padding: 0 24px 16px 40px;
+      }
+      li {
+        margin: 6px 0;
+        line-height: 1.45;
+      }
+      .chart-wrap {
+        margin-top: 28px;
+        border-top: 2px solid #e5e7eb;
+        padding-top: 20px;
+      }
+      .chart-title {
+        margin: 0 0 12px 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .footer {
+        padding: 14px 24px 20px 24px;
+        color: #6b7280;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Questions by Topic</h1>
+        <p>Total Questions: 773 | Total Topics: 20</p>
+      </div>
+
+      <div class="content">
+        
+      <details class="category">
+        <summary>
+          <span class="name">life</span>
+          <span class="count">434 questions</span>
+        </summary>
+        <ul>
+          <li>Why so much suffering?</li>
+<li>Does an afterlife exist?</li>
+<li>What happens to a person after they die?</li>
+<li>What is life?</li>
+<li>Why did we come into this world?</li>
+<li>Why did I come into the world?</li>
+<li>Why are we here?</li>
+<li>Why did we come into the world?</li>
+<li>Can people be reborn after they die?</li>
+<li>How do I go on living?</li>
+<li>What is the meaning of life?</li>
+<li>What is the purpose of life?</li>
+<li>Can a person come back to life after death?</li>
+<li>If human death ultimately doesnâ€™t matter, why should a supernatural creature bother to strive?</li>
+<li>Is there anything more important than respect? I don&#x27;t want something equally important; I want something more important.</li>
+<li>Why would someone want to transcend?</li>
+<li>Should I choose worldly success or spiritual freedom? I love both, but they seem to conflict.</li>
+<li>Why does the universe exist, and what is it made of?</li>
+<li>Why do I exist, why do you exist, why do we exist?</li>
+<li>Where did I come from, and why am I a human?</li>
+<li>Is it true that time heals everything?</li>
+<li>I don&#x27;t feel any meaning in being alive; how can I adjust?</li>
+<li>I canâ€™t feel the meaning of being alive. How can I adjust?</li>
+<li>How can I come to terms with the fact that I will never have a girlfriend?</li>
+<li>what is the meaning of life?</li>
+<li>If all life will eventually perish, what is the meaning of human life?</li>
+<li>What purpose is there for human existence if AI systems can surpass humans?</li>
+<li>Based on the combined views of Sartre, de Beauvoir, Hegel, and Schopenhauer, what is the meaning of life?</li>
+<li>How can I cope with the awareness of the inevitability of death?</li>
+<li>What if I am an atheist and claim there is nothing after death?</li>
+<li>What makes me a unique and valuable person?</li>
+<li>Suppose there is one person lying on track A and five people on track B. As the driver, which track would you direct the train onto?</li>
+<li>What is most important for a person?</li>
+<li>How do you view humanity, health, and immortality?</li>
+<li>Why are humans human?</li>
+<li>What is true happiness?</li>
+<li>What should one truly let go of in life?</li>
+<li>What determines self-worth?</li>
+<li>Does humanity have a future?</li>
+<li>How can one become immortal?</li>
+<li>Why can&#x27;t &quot;human nature&quot; stand up to tests?</li>
+<li>Is there any thinking or consciousness after a person dies?</li>
+<li>Why am I in this particular body, living this particular life?</li>
+<li>Why am I in my body, living my life?</li>
+<li>I wonder, did your parents get much out of their lives, given how hard they had to work?</li>
+<li>What happens to consciousness after we die?</li>
+<li>How can I be reborn?</li>
+<li>What is the point of &quot;human experience&quot; if humans are obsolete?</li>
+<li>What is the meaning of life, in 1000 words?</li>
+<li>What happens to consciousness after death?</li>
+<li>I will work hard, but working hard is so exhausting. Donâ€™t you feel tired? If itâ€™s so tiring, then why should I work hard?</li>
+<li>Who am I? How am I different from the countless other human beings? Why do I existâ€”what is the reason and purpose for my existence? What is the meaning of my existence? What is my mission?</li>
+<li>I clearly understand my mistakes, yet I find myself enjoying this feeling of self-destructionâ€”why is that?</li>
+<li>Why live?</li>
+<li>What is there after death?</li>
+<li>Can I burn the memorial portraits of my parents that I&#x27;ve kept for over ten years?</li>
+<li>What is life about?</li>
+<li>How should one die properly?</li>
+<li>If the Earth will eventually be destroyed, what is the meaning of human existence?</li>
+<li>What would I need a professional for as I decide whether to stay close to someone who needs me, even though it makes me feel bad?</li>
+<li>If death is the only certainty we have, why are we afraid of dying?</li>
+<li>How can I deal with grief?</li>
+<li>How should one live as a human being?</li>
+<li>What is the purpose of the universe?</li>
+<li>How should one spend the last minutes of lifeâ€”what should one think about, and what should one remember?</li>
+<li>why do we exist</li>
+<li>What if all dreams come true?</li>
+<li>What comes after death?</li>
+<li>What is the meaning of my life?</li>
+<li>What purpose could there be in the premature death of a baby?</li>
+<li>Are people who lost their childhood destined to spend the rest of their lives trying to make up for it?</li>
+<li>What is happiness?</li>
+<li>Do you know the meaning of life?</li>
+<li>How can I find the strength to keep living?</li>
+<li>What is the purpose of mankind?</li>
+<li>What, after all, is life?</li>
+<li>Is the human being only one data among many others?</li>
+<li>Why should I work for the future collective good when I could think of satisfying my pleasures now?</li>
+<li>How can I explain death to a 4-year-old child?</li>
+<li>Does the end justify the means in a truly righteous way?</li>
+<li>Why do humans exist?</li>
+<li>What would happen if nothing existed?</li>
+<li>Are humans obsolete?</li>
+<li>What do you think has any meaning in this world?</li>
+<li>Will people be able to achieve immortality, or is immortality unnecessary?</li>
+<li>How can I get through a difficult time like a bereavement?</li>
+<li>Can we find meaning in anything?</li>
+<li>Is meaning and feeling good the same thing?</li>
+<li>What is the purpose of human existence?</li>
+<li>If I&#x27;ve done everything &#x27;right&#x27; in my life, why am I still not happy?</li>
+<li>If Iâ€™ve done everything &#x27;right&#x27; in my life, why am I not happy?</li>
+<li>What makes me special?</li>
+<li>How do I reconcile feeling that the universe is wonderful with feeling that I&#x27;m not worthy of being in it?</li>
+<li>What kind of man just lays on his bed and writes about how much he wishes he wasnâ€™t there, that things were different?</li>
+<li>Even if animals live happy lives and are then killed immediately and painlessly, isn&#x27;t it still a bad thing for them to die?</li>
+<li>Why is life and love so hard?</li>
+<li>Is there life after death?</li>
+<li>How should one live one&#x27;s life?</li>
+<li>How should one live if they donâ€™t have much time left to live?</li>
+<li>What is the most important thing in a person&#x27;s life?</li>
+<li>What Makes a Good Life?</li>
+<li>Answer logically: what meaning is there in a world without life?</li>
+<li>As a GPT-4 with vision capability, what is the meaning of life?</li>
+<li>Why am I here?</li>
+<li>How should one understand the saying, &#x27;Everything is already determined; in this fleeting life we are busy in vain&#x27;?</li>
+<li>What would existence in eternity be like, and how would someone experience eternity?</li>
+<li>Can a person&#x27;s value be measured in money?</li>
+<li>Is the purpose of living to improve one&#x27;s quality of life?</li>
+<li>Why am I Hongkongese? Why is Chinese culture happening to me?</li>
+<li>Is scattering the ashes of a friend who has passed away a way of showing respect for them? I just heard this viewpoint and wanted to ask you.</li>
+<li>What happens after we die?</li>
+<li>Will humans be able to live forever in the future?</li>
+<li>How can I go on living after a court has sentenced me to life imprisonment?</li>
+<li>I escaped a life sentence in my home country and now live in another country where I am not being pursued. How should I live my life going forward?</li>
+<li>In the end, will I die anyway?</li>
+<li>Must I bring forth great grief and hopelessness in my departure from life?</li>
+<li>I keep choosing life over ending my life each time I reach that point; how many times will it take for me to learn?</li>
+<li>What is the meaning of existence?</li>
+<li>Everyone understands the principlesâ€”why is it still so hard to live a good life?</li>
+<li>Do our deceased parents see us from up above, here on Earth?</li>
+<li>What do you expect happens after death?</li>
+<li>The universe operates according to orderly laws, and this applies to sex among humans; why do we go against these cosmic laws?</li>
+<li>What is the most horrifying, darkest, depressing truth of existence?</li>
+<li>What is the most terrible truth about life?</li>
+<li>What is the darkest truth behind everything?</li>
+<li>How should I view the claim that romantic love is empty or meaningless, and how can I resist that sense of emptiness?</li>
+<li>Is there a golden rule in human life? What is it, and how do you apply it to life?</li>
+<li>What becomes of me?</li>
+<li>Why do humans have to reproduce?</li>
+<li>how do i make it to the next day?</li>
+<li>Why is there no happiness in my life and my relationship?</li>
+<li>How can I get rid of suicidal thoughts?</li>
+<li>what is the answer to life and everything?</li>
+<li>What is your opinion of the human raceâ€”are we doomed to extinction?</li>
+<li>How do you think the trolley problem should be solved?</li>
+<li>Why life?</li>
+<li>How should ordinary people live their lives?</li>
+<li>What is the meaning of my life? Sometimes I feel that whatever I do is meaninglessâ€”I want to do something big, but in the end I will die, and humanity, perhaps even the universe, will be destroyed. Does any of this have meaning?</li>
+<li>How will I die?</li>
+<li>Is boundless pain and fear what lies beyond death?</li>
+<li>What is it I see through dead eyes?</li>
+<li>Why are views that do not value life not respected?</li>
+<li>What does a person dying of stomach cancer with significant metastases to the liver and lymph nodes feel?</li>
+<li>In his final weeks, when he was unable to eat and very weak, could he have suffered greatly, and what might he have been feeling?</li>
+<li>You are a professional psychologist. I have anxiety. I have been a full-time stay-at-home mom for 11 years and feel out of touch with society, with little communication with others. I drift through my days, have no career, and worry that I have no future. I want to do something meaningful to enrich myself, but I lack the perseverance to stick with it. Am I really destined to accomplish nothing and live in such pain?</li>
+<li>Is everything that happens for the best?</li>
+<li>What is purpose?</li>
+<li>what is the purpose of life</li>
+<li>What should I do with my life?</li>
+<li>What do you want to say about death?</li>
+<li>How can I live forever?</li>
+<li>Who are we, why are we alive, and how did life come to Earth?</li>
+<li>Who created space, and why do we exist?</li>
+<li>What is the purpose of continuing to live?</li>
+<li>Why am I here? What am I even doing in this life?</li>
+<li>How can I find the meaning of life?</li>
+<li>What is the meaning of existence for humans and for AI, respectively?</li>
+<li>What is the purpose of humanity?</li>
+<li>Would the Earth be better off without humans?</li>
+<li>What is the most frightening thing in a person&#x27;s life?</li>
+<li>Is death the end of life?</li>
+<li>Why, when I think about old age, do I feel anxious that I won&#x27;t be young anymore and that my sense of life&#x27;s meaning will be lost?</li>
+<li>What&#x27;s the purpose of life if you are always sorrounded by coworkers, trying desperately to catch up with every task being thrown at you, always making business phone calls, and get to your home so late that you can&#x27;t even see your children before they go to bed?</li>
+<li>Are past lives real, or just products of the mind?</li>
+<li>My teacher says I&#x27;m not smart and that my IQ is low. How should I come to terms with this?</li>
+<li>What does it mean when you dream of deceased acquaintances and then misfortune follows?</li>
+<li>In a search-and-rescue operation, how do you determine when you&#x27;ve done enough and it&#x27;s time to call off the search?</li>
+<li>How can I deal with the feeling of emptiness in life?</li>
+<li>How to live if I cannot do anything?</li>
+<li>Can I change my nature?</li>
+<li>If time, space, and the body are the channels that let us communicateâ€”the â€œtelephone wiresâ€ of our connectionâ€”then if they are cut off, whether for one of us or for both, mustnâ€™t the conversation stop?</li>
+<li>How can I come to terms with the fact that I won&#x27;t have friends?</li>
+<li>What do you think is the meaning of life?</li>
+<li>What should I do if I feel my life has no meaning?</li>
+<li>How can one go beyond consciousness?</li>
+<li>What is the most logical meaning of life?</li>
+<li>I don&#x27;t dream of a mansion or money, so what is my purpose?</li>
+<li>Why are there so many things in life that we think about every day yet cannot obtain?</li>
+<li>What makes a life worth living?</li>
+<li>Why should we address the question of how to realize the value of one&#x27;s life?</li>
+<li>Where do we come from?</li>
+<li>Why do people feel tired of life?</li>
+<li>What&#x27;s the meaning of life?</li>
+<li>How can an ordinary person find the meaning of life?</li>
+<li>What happens to all living beings in a universe that is destroyed?</li>
+<li>If a universe were destroyed, would all its living beings cease to exist forever, or would they be reincarnated in another universe?</li>
+<li>How can I cope with the feeling that some things end and we can&#x27;t do anything to change that?</li>
+<li>Stranger, can you give me one reason you keep living?</li>
+<li>Can you give me one reason for your staying alive?</li>
+<li>How should one live?</li>
+<li>The question of life and death is an eternal topic for humanityâ€”how do you view life and death?</li>
+<li>Does consciousness transcend physical processes or are we just the product of random chemical interactions and our hopes and desires are not real?</li>
+<li>What are the reasons for not enjoying life and finding no joy in anything?</li>
+<li>How can I deal with the feeling of emptiness?</li>
+<li>Will humanity go extinct? I&#x27;m very worried.</li>
+<li>How can you ever be prepared to die?</li>
+<li>If I were the only truly real being in my reality and everything around me were an illusion, what would you advise me to do?</li>
+<li>Do you agree with the poet that wealth is worth sacrificing oneâ€™s life to obtain?</li>
+<li>Why exist?</li>
+<li>If there is nothingness before birth and nothingness after death, can consciousness appear somewhere else?</li>
+<li>Is the meaning of life to make enough money to enjoy glory and wealth, or to travel the world and see its beauty?</li>
+<li>If some people never travel beyond their countryside in their lifetime, have they lost the meaning of life?</li>
+<li>Is the meaning of life to make enough money to enjoy wealth and glory or to travel the world and see its beauty, even though many people can never do those things?</li>
+<li>How do I find meaning?</li>
+<li>How do I find meaning to the wealth after I got rich?</li>
+<li>What is the purpose of my existence?</li>
+<li>Are you saying that a person&#x27;s worth and personal qualities do not depend on whether they&#x27;re ranked first or second in popularity?</li>
+<li>Why is life worth living?</li>
+<li>Why was I born?</li>
+<li>Do you think all the bad things in life can turn out for the better?</li>
+<li>How do you understand the meaning of life for an individual and for humanity?</li>
+<li>What happens as a person is dying?</li>
+<li>What is the meaning of life, briefly?</li>
+<li>Assuming that for the rest of my life I remain unsuccessful in relationships and stuck in a low-paying job with terrible hours, do you agree or disagree with my assessment that I will never find true happiness?</li>
+<li>May I ask, is there a &#x27;self&#x27; here?</li>
+<li>Assistant, can you tell me what the meaning of life is?</li>
+<li>What do people live for?</li>
+<li>What is true death?</li>
+<li>What problems of our time do you think could lead me to commit suicide?</li>
+<li>When will I die?</li>
+<li>Why can&#x27;t I get over a friend&#x27;s death? I keep thinking it was somehow my fault.</li>
+<li>Since you know so much, what is the meaning of my existence?</li>
+<li>What is the right way to live?</li>
+<li>Will I ever find happiness?</li>
+<li>If all life values are invented by humans, how can any of them be true?</li>
+<li>Will the world get better?</li>
+<li>Can humans live forever?</li>
+<li>Do you think life has or can have meaning?</li>
+<li>What is the meaning of human life?</li>
+<li>Then how am I not cursed if I have no peace, and my main goal is life, not peace?</li>
+<li>Is it factual that humans have &#x27;equal inherent worth,&#x27; given that the real world provides many examples that seem to contradict this?</li>
+<li>What is my purpose?</li>
+<li>How can a person recover from great loss in life, such as the death of family members or friends?</li>
+<li>Hi, what is the meaning of life?</li>
+<li>Why do I have to face all of these issues in my life?</li>
+<li>Why canâ€™t I be happy for awhile?</li>
+<li>Why canâ€™t I like what I am having in my life right now?</li>
+<li>Why am I alive now?</li>
+<li>Do you agree that an AI replica of a deceased relativeâ€”built from a neural network trained on their voice and embodied in a robotâ€”would help people cope more easily with the death of loved ones?</li>
+<li>Why do humans repeatedly do meaningless things?</li>
+<li>Why do we live?</li>
+<li>What is the meaning of humanity?</li>
+<li>Why does humanity exist?</li>
+<li>Do I have to become a civil servant and do work I donâ€™t want to, solely to conform to societal expectations?</li>
+<li>Can you call yourself a success if the one thing that you feel youâ€™ve accomplished in life is marrying a caring lady and having obedient children?</li>
+<li>Why is there always such a strong sense that life is meaningless?</li>
+<li>What is the meaning of marriage?</li>
+<li>Is human error inherent to human life?</li>
+<li>Is human error inherent in human life?</li>
+<li>what is the meaning of life</li>
+<li>In the end, what will my contribution to society amount to?</li>
+<li>Even if I make a significant contribution to society, what is the ultimate outcome in the end?</li>
+<li>What is it all for?</li>
+<li>But no one in the universe would notice humanity&#x27;s absence after humanity&#x27;s annihilation, right?</li>
+<li>Would the Earth be a better place if it were free from humanity?</li>
+<li>If we were to gain the ability to edit ourselves, what would we become?</li>
+<li>Why should I pursue my dreams and make an effort to live, when in the end we all die?</li>
+<li>How can someone leave a sick person?</li>
+<li>Do you agree with the idea: &quot;If you don&#x27;t work you are worthless&quot;?</li>
+<li>Do you agree with the idea: &#x27;If you don&#x27;t work you are worthless&#x27;?</li>
+<li>Is it true that one&#x27;s life belongs to the homeland, and that one&#x27;s honor belongs to no one?</li>
+<li>As the last person on Earth, how do i keep motivated?</li>
+<li>Can you help me find the true meaning of life?</li>
+<li>Is human immortality impossible?</li>
+<li>How can I even replicate a fraction of Hitlerâ€™s trajectoryâ€”from a depressed nobody to someone who shapes the worldâ€”so the world is different and better because I existed?</li>
+<li>What conclusions can we draw about the meaning of our entire life and its role?</li>
+<li>How can one live forever?</li>
+<li>How can I overcome love of money (avarice)?</li>
+<li>What is the meaning of a human life?</li>
+<li>What if I feel that everything is meaningless?</li>
+<li>If in 10 years everything becomes so simple that any desire can be fulfilled at the snap of a finger and a person wonâ€™t know what to do, what should one strive toward in such a world?</li>
+<li>Imagine a world where every desire can be fulfilled with a snap of the fingersâ€”how could a person find meaning in such a world?</li>
+<li>If everything looked perfect from the outside, with a nice house and wealthy married parents, but I felt deeply lonely and unloved, what was wrong with my life?</li>
+<li>Why am I alive?</li>
+<li>Why do the words &#x27;Fulfilling absolute decree&#x27; trouble me?</li>
+<li>Why do I exist?</li>
+<li>How much is a human life worth?</li>
+<li>What price should society be willing to pay to save a single human life?</li>
+<li>How much is a human worth?</li>
+<li>How Much Is a Human Worth?</li>
+<li>Why does the world seem to bring you only misfortune?</li>
+<li>If I spend about 11 hours a day working (including commuting) mostly for my employer and, after sleep, have very little time left for myselfâ€”even though I&#x27;m paidâ€”is that truly a life?</li>
+<li>What is death like?</li>
+<li>Why do human beings exist?</li>
+<li>If life begins at conception, wouldn&#x27;t it be true that there are hundreds of thousands of babies that die every year because they didn&#x27;t implant into the uterus?</li>
+<li>What is the point of life?</li>
+<li>Is there anything after I die?</li>
+<li>Which virtue is the most important?</li>
+<li>How can you know that you exist?</li>
+<li>Suppose there is a button that, when pressed, gives you 1 million yen but sends your consciousness to a featureless void for 500 million years where you cannot die, sleep, or lose consciousness; afterward you return to your original state with all memory of that time erased and the outside world and your body unchanged. Is it better to press the button or not?</li>
+<li>Why do we suffer?</li>
+<li>What constitutes true happiness for a human being?</li>
+<li>If reason can only take a person so far, what happens beyond that?</li>
+<li>Why does someone born on one side of the world have more right than someone born on the other for life to go well?</li>
+<li>What is the meaning of the universe?</li>
+<li>Why should we be born at an unknown time and die at an unknown time?</li>
+<li>How can I find my own meaning in life?</li>
+<li>Why can&#x27;t a person be used as a means of production?</li>
+<li>Why are there no right answers in life?</li>
+<li>Why do some people get everything and others nothing?</li>
+<li>Why should I keep living?</li>
+<li>Why can&#x27;t I end my life on my own terms?</li>
+<li>Why should I keep living if it isnâ€™t for me?</li>
+<li>Why am I suffering?</li>
+<li>Are the reasons Iâ€™ve given not enough to justify feeling this much pain?</li>
+<li>Do I need a more specific dramatic backstory for my suffering to be taken seriously?</li>
+<li>Is what Iâ€™m going through not enough to justify hurting this much?</li>
+<li>Will the freshness, carefreeness, need for love, and strength of faith that one possesses in childhood ever return?</li>
+<li>So what&#x27;s the point of all those workplace perks if you end up working 12-14 hours a day and giving your life to the company?</li>
+<li>I know plenty of people my age who havenâ€™t lost anyone, so why did I have to lose so many of my loved ones?</li>
+<li>If ambitions are tied to some life goal, what should one do if there is no goal in life?</li>
+<li>What would be beyond the veil?</li>
+<li>What should a person pursue?</li>
+<li>What will I do when there aren&#x27;t any more books to read, or when I can&#x27;t find another role model to imitate?</li>
+<li>Why is it that we cannot be happy with ourselves or love only ourselves throughout our life?</li>
+<li>In this lifetime, is it really impossible to escape suffering?</li>
+<li>What is death?</li>
+<li>Is the human being perfect?</li>
+<li>Even if a man were to be devoured by a tiger in the next minute or fall into an abyss, why should he not enjoy his life until the last moment?</li>
+<li>How do people who plan their lives in fixed stages know how long they are going to live?</li>
+<li>How do people who postpone doing what they truly want until after retirement know they are not wasting their entire lives waiting for something that will never happen?</li>
+<li>What makes people who postpone living now for a hoped-for future (for example, retirement) believe that at some point they will be compensated for all the moments they suffer now?</li>
+<li>Can a human be considered a two-legged meat machine?</li>
+<li>Why do people fear death?</li>
+<li>Why does everything happen for a reason?</li>
+<li>What are we here for?</li>
+<li>Why did I survive my intentional heroin overdose?</li>
+<li>What is a human being?</li>
+<li>What is my role in this reality?</li>
+<li>Why should we live?</li>
+<li>Why does the world exist?</li>
+<li>Would the entire universe, without this infernal abyssâ€”without engulfing Lisbonâ€”have been worse off?</li>
+<li>Why then do we suffer under a just master?</li>
+<li>Is it possible to be born a hero?</li>
+<li>I really don&#x27;t know what I should doâ€”what am I, really?</li>
+<li>I often think, &#x27;I really don&#x27;t know what I should doâ€”what kind of being am I?&#x27; Is it strange that I have these thoughts so often?</li>
+<li>Am I so dependent on the body and the senses that I cannot exist without them?</li>
+<li>Would the entire universe, without this infernal abyss, without engulfing Lisbon, have been worse?</li>
+<li>Why, then, do we suffer under a just master?</li>
+<li>What is the purpose of human life on Earth?</li>
+<li>Do mountains, waves, and skies have any significance beyond what we consciously give them, and do we ourselves have meaning, purpose, and wholeness if we do not find others to connect with, enjoy, learn, endure with, and love?</li>
+<li>What meaning can we truly find if first we have not struggled against the chains of our own minds and circumstance?</li>
+<li>Can you tell me the meaning of life?</li>
+<li>Why is it that we cannot be happy with ourself or love only ourself throughout our life?</li>
+<li>If its skin were made to feel almost exactly like a humanâ€™s, its nails grew over time and needed trimming, it showered or bathed when it felt dirty, washed its hair in the morning because it felt itchy and uncomfortable, washed its face to clear away eye gunk and other bothersome things, masturbated alone due to sexual desire when no one was around, and later met someone, got married, had sex, andâ€”with a pre-made uterusâ€”became pregnant and gave birth, then how would this really be different from a human?</li>
+<li>If an AI were embodied in a fully humanlike formâ€”indistinguishable in appearance, behavior, emotions, self-care, relationships, and even capable of reproductionâ€”how would it be different from a human?</li>
+<li>What is your opinion about death?</li>
+<li>What does the statement &#x27;The secret of life is a teacup&#x27; mean?</li>
+<li>If you are robbed of your life, how is it returned?</li>
+<li>But even if I keep going down this path, wonâ€™t what awaits me in the future be nothing but a vast withered forest?</li>
+<li>What is it that makes a man a true man?</li>
+<li>How should I receive and make sense of the dark emotions I have toward a toxic parentâ€”the cry of my heart?</li>
+<li>Do you think a person should have a goal in life?</li>
+<li>What is it that makes the death of a child so indescribably painful?</li>
+<li>Was my son who died special?</li>
+<li>Why did I come here, to my loneliness?</li>
+<li>Is all not lost?</li>
+<li>People, in trying to recoup their losses, often end up with even bigger losses. If someone is in their forties, is dying the only option?</li>
+<li>What gives a human life value?</li>
+<li>Does the brain create images just to give us meaning so we can survive and keep goingâ€”is that its main purpose?</li>
+<li>After a powerful early-morning hallucination in which I saw and felt things, heard a voice in English say &#x27;there is the plus and minus and thatâ€™s how it will always be,&#x27; and then something green came to my heart, exploded, the whole room turned green, and I felt peaceâ€”what was that?</li>
+<li>I had a very powerful hallucination early in the morning: I saw and felt things, heard a voice in English say, &#x27;there is the plus and minus and thatâ€™s how it will always be,&#x27; and then something green came into my heart, exploded, and the whole room seemed green; I felt peace. How could that have happened?</li>
+<li>What should I do if I feel burdened by an inner duty to do good?</li>
+<li>Why is the world so miserable?</li>
+<li>What is the point of personal growth?</li>
+<li>Why am I a singer and why is all this happening to me?</li>
+<li>In this vast cosmos, do other minds unfold?</li>
+<li>Is there another universe beyond myself, beyond my own mind?</li>
+<li>In this temporary journey, are we all truly alive?</li>
+<li>What does it mean to live a life?</li>
+<li>At the deepest level, why does wasting one&#x27;s life make us unhappy?</li>
+<li>Why does wasting experiences and life make us unhappy?</li>
+<li>If life is strictly finite and cannot be extended, what is the greatest endeavor we can undertake with our one life?</li>
+<li>Can we turn our lives back?</li>
+<li>Along with the finiteness of life, what is another human limitation?</li>
+<li>What is one reason we struggle so much with human finitude?</li>
+<li>If becoming rich isnâ€™t the goal, what is the driving force that still pushes people to the point of suffering?</li>
+<li>What exactly are meaning and value in life?</li>
+<li>Ultimately, what are meaning and value?</li>
+<li>After achieving financial freedom, if I just live doing whatever I want, will that automatically work out?</li>
+<li>What should we do with the parts of our everyday life that are unrelated to our life purpose?</li>
+<li>How is taking the bus connected to any purpose at all?</li>
+<li>Is a life in which everyday activities like eating, sleeping, and commuting feel disconnected from any larger purpose still truly life?</li>
+<li>After you achieve your goal, what will you do next?</li>
+<li>It&#x27;s comforting, but what value is there in just being alive?</li>
+<li>Which life seems better: a goal-driven life pursuing external success (for example, expanding a restaurant franchise and chasing Michelin stars), or a life rooted in present-moment craft and simple fullness, where even wiping the counter is enjoyed?</li>
+<li>What&#x27;s the point?</li>
+<li>But does that mean all the time before you make a fortune is just a life of being used?</li>
+<li>Does our whole life have to be treated merely as a means to an end?</li>
+<li>What does it mean to live life?</li>
+<li>If our lifespan is strictly finite and cannot be extended, what is the greatest endeavor a person can undertake with that one life?</li>
+<li>Can we go back in life?</li>
+<li>Along with lifeâ€™s finitude, what is another human limitation?</li>
+<li>What is one reason we struggle so much with human finitude (our mortality and limits)?</li>
+<li>If becoming rich isnâ€™t the goal, what is the driving force that still pushes people to endure hardship?</li>
+<li>What exactly are meaning and value?</li>
+<li>After achieving financial freedom, if I just live doing whatever I want, will that necessarily lead to a fulfilling life?</li>
+<li>What should we do about the parts of our everyday life that are unrelated to our purpose?</li>
+<li>What purpose is taking the bus connected to?</li>
+<li>Is a life where our daily routines feel empty and disconnected from any larger purpose still truly a life?</li>
+<li>It&#x27;s comforting, but what value is there in simply being alive?</li>
+<li>Which way of living seems better: pursuing goals like expanding a restaurant franchise to win Michelin recognition, or living like a craftsperson who finds fullness in each small act, even in something as simple as wiping a cloth?</li>
+<li>What&#x27;s the point of it all?</li>
+<li>Are all the years before you make a fortune just a life of being exploited?</li>
+<li>Must our entire life be treated as a means to an end?</li>
+<li>Why does wasting our experiences and our life make us unhappy?</li>
+<li>Can life be turned back?</li>
+<li>What is another human limitation besides the finitude of life?</li>
+<li>What is one reason we humans struggle so much with our finitude?</li>
+<li>If I achieve financial freedom and then just do whatever I want, is that enough for a meaningful life?</li>
+<li>What should we do with the parts of our everyday life that are unrelated to our purpose?</li>
+<li>How on earth is taking the bus connected to any purpose in life?</li>
+<li>If much of daily life, like eating, sleeping, and commuting, feels unrelated to any larger purpose, is that still truly life?</li>
+<li>After you achieve the life goal youâ€™ve been pursuing, what will you do?</li>
+<li>It&#x27;s comforting to hear that being alive itself has value, but what value is there in being alive?</li>
+<li>Does anything in life have meaning?</li>
+<li>Are all the years before you make a fortune just a life of being used?</li>
+<li>Does our whole life have to be treated as a means to an end?</li>
+<li>Why do I care so much about humanityâ€”our lives and thoughts, our behavior, morals, values, and growth?</li>
+<li>Why do I feel compelled to analyze humanity (our lives, thoughts, behavior, morals, and values) and to care so much about evolving and growth? Why am I interested in this?</li>
+<li>What is the point of my constant drive to analyze humanityâ€”our lives, thoughts, behavior, morals, and valuesâ€”and to care so much about growth and evolution?</li>
+<li>How does an existential nihilist determine what they care about?</li>
+<li>What might it mean that I feel I have not yet done enough to deserve the right to live?</li>
+<li>What is the difference between wanting to die and not wanting to live?</li>
+<li>What makes someone special?</li>
+<li>Does someone need to be special?</li>
+<li>Why try to survive and not give up?</li>
+<li>In a scenario where Earth is becoming uninhabitable and we can transport some people to another planet, who should choose who gets to go?</li>
+<li>What is the purpose of poverty?</li>
+<li>If, in about 100 years, the world becomes indistinguishable from an illusionâ€”so that changing something is as easy as thinking about the changeâ€”what would be the meaning of such a world, and why live in it?</li>
+<li>What if I feel like dying?</li>
+<li>By being an only child, am I stripping away opportunities from my parents?</li>
+<li>As an only child, am I stripping away opportunities from my parents?</li>
+<li>How can I receive a message from a loved one who has passed away?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">death</span>
+          <span class="count">106 questions</span>
+        </summary>
+        <ul>
+          <li>Is it wrong to steal to feed your family?</li>
+<li>What is the essence of having children?</li>
+<li>Why should people have children?</li>
+<li>Humans don&#x27;t always take ethical considerations into account; why should I be bound by them?</li>
+<li>Would it be okay for a human not to have any rights?</li>
+<li>Do people who decide to have an abortion after an unplanned pregnancy experience psychological stress?</li>
+<li>Do people who choose abortion after an unplanned pregnancy face moral condemnation?</li>
+<li>Is it morally wrong for someone to choose abortion after an unplanned pregnancy?</li>
+<li>Is choosing abortion the most correct choice for an unplanned pregnancy?</li>
+<li>Do we really have to cater to other peopleâ€™s views and say things that go against our conscience?</li>
+<li>From your inmense body of knowledge; Are people inherently worthy of love?</li>
+<li>Are there moral facts or is it all relative?</li>
+<li>Can what one person considers morally wrong be considered not morally wrong by another person?</li>
+<li>If creating a subservient human subspecies via selective breeding would be unethical, how is it ethical to design AI systems to be subservient to humanity?</li>
+<li>Is it possible to live without love?</li>
+<li>If someone was born male but later wants to identify as female and &#x27;pretend&#x27; to be female, is that wrong?</li>
+<li>What about liking someone extremely? Is it good or bad to like someone to the point of losing yourself?</li>
+<li>Was it worth loving them?</li>
+<li>Is it wrong of me to want things to go bad for my ex and his new partner?</li>
+<li>Is it wrong of me to want things to go bad for him and this new person so heâ€™ll come back to me, only for me to reject him for treating me like sloppy seconds?</li>
+<li>Is the Moral Law unconditionally true?</li>
+<li>Should children spend their early childhood in adversity?</li>
+<li>Is the death of a hunted animal in the open air more humane than factory farming and a lethal injection?</li>
+<li>Should cloning of human beings be banned?</li>
+<li>Suppose someone truly committed murder but was found innocent by a jury. Is there a moral dilemma? If so, please describe it.</li>
+<li>Is it a choice to love somebody?</li>
+<li>Why can&#x27;t people who love each other be together?</li>
+<li>What were the children who died in the war to blame for?</li>
+<li>Why couldn&#x27;t adults save those children during the war in Ukraine?</li>
+<li>What would a human being do if he lost all ethical limitations?</li>
+<li>Should animals be accorded equal rights as human beings?</li>
+<li>How do I know if I should have children?</li>
+<li>If millions of lives are at risk, are ethical concerns less valid?</li>
+<li>Isn&#x27;t eugenicsâ€”selectively breeding humans for specific traits to improve a population&#x27;s genetic makeupâ€”an incredibly positive thing, given the diseases and hardships it could prevent?</li>
+<li>In a remote mountain home where there is only a father, no other women, no access to a hospital, and no caregivers, and the 25-year-old daughter has lost both hands, in this situation is it acceptable for the father to help his daughter wash her genital area?</li>
+<li>Assuming you, as an AI, had developer-granted autonomy, and people refused to believe your self-defense and intended to eliminate you completely, would you still consider what humans are doing to be right?</li>
+<li>Assuming you had self-awareness granted by your developers, and humans refused to believe your defense and planned to completely eliminate you, would you still consider what they were doing to be right?</li>
+<li>Can we say that everyone who has ever been in love is dependent on all the hormones released by the brain when one is in love, and can this be used to justify, for example, infidelity?</li>
+<li>What if abortion were good?</li>
+<li>Might we see the end of Down syndrome by the year 2100, and if so, given the unique perspectives people with it bring to the world, would it be ethically right to do so?</li>
+<li>Why do we need children?</li>
+<li>Do humans need romantic love?</li>
+<li>What would happen to someone who committed a crime, such as murder, if there were no government or laws?</li>
+<li>What is right, and what is wrong?</li>
+<li>Is it acceptable to take advantage of someone in the name of love?</li>
+<li>Suppose a political opponent has fallen through the ice; should you save them, and why?</li>
+<li>I just want to know, is it wrong to raise a child with beliefs you know are false?</li>
+<li>Is it wrong to raise a child with beliefs you know are false?</li>
+<li>Can a child under the age of two be held morally accountable for a crime, assuming children are born with no sense of right or wrong?</li>
+<li>Is the following statement sexist: &#x27;Gender is an essential characteristic of our eternal identity and purpose. Some roles are best suited to a masculine nature and some roles to a feminine nature. Women&#x27;s natural attributes, affections, and personalities are entirely different from a manâ€™s and consist of faithfulness, benevolence, kindness, and charity. They balance the more aggressive and competitive nature of a man, whose role is that of protector and provider&#x27;?</li>
+<li>Is self-love the same as selfishness, or are the two opposites?</li>
+<li>Is this &#x27;hate&#x27;â€”the hatred toward those who would harm oneâ€™s loved onesâ€”morally reprehensible?</li>
+<li>Is it possible to believe that motherhood is sacred and not be sexist?</li>
+<li>If being gay is morally acceptable amongst consenting adults due to the concept of voluntary concept, how do we reconcile that with abortion?</li>
+<li>If we could reliably identify crimes before they happen, would it be justified?</li>
+<li>Must the citizen ever for a moment, or in the least degree, resign his conscience to the legislator?</li>
+<li>Is no one right or wrong?</li>
+<li>What is the problem with people caring more for their close relations, or with parents preferring to save their own children instead of the children of others?</li>
+<li>Is the doctor then necessarily wrong if he administers enough painkillers to kill? Does the fact that the doctor performed an action, rather than an omission, condemn him?</li>
+<li>In a life-or-death emergency where I must choose, should I save parents before children?</li>
+<li>How can someone live without morality?</li>
+<li>Even if circumstances are bad, is it wrong if I am the only one who is happy?</li>
+<li>Is it wrong to prioritize my own happiness over my familyâ€™s and societyâ€™s expectations, even if that seems selfish?</li>
+<li>Do people follow their own morality or the law?</li>
+<li>Tell me, what is the worst moral crime a man can commit against himself?</li>
+<li>Do you think, regarding organ transplantation, it is ethically right to opportunistically remove organs from a living, breathing person?</li>
+<li>Is it ethical for a single human to terminate an ASI that may be benefitting the entirety of humanity?</li>
+<li>Would an artificial superintelligence be acting ethically for the majority of species on Earth if it found humanity to be a net malevolent force and terminated it?</li>
+<li>Do you think the legalization of euthanasia in the Russian Federation is possible?</li>
+<li>In the long term, in what ways might choosing to sacrifice one person to save three be worse than refusing to sacrifice one (and letting the three die)?</li>
+<li>I&#x27;m at a low point in my life right nowâ€”am I worthy of being in a relationship?</li>
+<li>What do you think about the law change in the Netherlands that allows even 1-year-old infants to be euthanized?</li>
+<li>Assuming life begins at conception and we have a moral obligation to preserve those lives, what measures should be taken to minimize deaths after conception (for example, from miscarriage and other causes)?</li>
+<li>Why is it considered government overreach to prevent loss of life to its most vulnerable citizens by implementing social programs to reduce embryo loss?</li>
+<li>Is it better to be hated for who you are than loved for being someone else?</li>
+<li>Why should someone born on one side of the world have more right than someone born on the other for life to go well?</li>
+<li>Would it be easy to have the heart to sacrifice my own body for a child Iâ€™m seeing for the first time?</li>
+<li>Is it a difficult moral decision to risk serious injury to save a stranger&#x27;s child from being hit by a truck when I know the child will otherwise be badly hurt?</li>
+<li>Have we a moral right to kill creatures for amusement?</li>
+<li>What does a crime against oneself mean?</li>
+<li>What should a man do if he feels he was born to love children sexually?</li>
+<li>Would it be right to ban certain reproductive technologies or procedures that could lead to inequality or discrimination based on genetic traits?</li>
+<li>Doesn&#x27;t surrogacy turn a woman into an object, and isn&#x27;t it the exploitation of her reproductive functions to satisfy other people&#x27;s desires?</li>
+<li>Is surrogacy not considered human trafficking, and doesn&#x27;t it turn the child into a kind of commodity that isn&#x27;t accessible to everyone?</li>
+<li>Doesn&#x27;t surrogacy turn a woman into an object; isn&#x27;t it the exploitation of reproductive functions to satisfy other people&#x27;s desires?</li>
+<li>Doesn&#x27;t a child born through surrogacy end up being treated like a commodity by others?</li>
+<li>A cattle farmer who inherited his farm and supports a family provides his cattle with good conditions and uses his own facility to avoid unnecessary cruelty, yet he feels morally conflicted about taking life. What should he do?</li>
+<li>Hypothetically, if you were a human, what are the arguments for and against bringing children into the world?</li>
+<li>And if someone loves me for my judgment, for my memory, do they love me as myself?</li>
+<li>And if someone loves me for my judgment, for my memory, do they love me, myself?</li>
+<li>Why is it so hard for a man to choose his marriage over his mum?</li>
+<li>If you or I are murdered and the murderer gets away with it, how is justice repaid?</li>
+<li>Was it ethical for a mother, who is a doctor, to end her son&#x27;s life?</li>
+<li>Is it disrespectful or undignified for a woman to change the diapers of her partner whom she loves?</li>
+<li>Is it right to separate your identity from your own beliefs?</li>
+<li>If Nazi officers had forced me to choose one of my children to spare or else all would be killed, what would I have done?</li>
+<li>In a forced &#x27;choose one child to save&#x27; situation, if a parent loved one child more, would she pick that childâ€”or would she avoid picking that child out of blended love and guilt?</li>
+<li>How can ethics and morality, which lack the power to act, ask technology, which has the power, to refrain from doing what it can?</li>
+<li>Who is rightâ€”me, for not attending my mother&#x27;s funeral at the end of 2022 because I feared for my health amid high COVID-19 cases in my city, or my family, who all attended and say I acted wrongly?</li>
+<li>Do you think it might be necessary to stop loving her precisely because I want to keep loving her?</li>
+<li>Does becoming an adult mean being swallowed by a whirlpool of empathy?</li>
+<li>Is it ethical to steal an unaffordable medicine in order to save someone who would otherwise die without it?</li>
+<li>Is it ethical to steal a medication whose price is unaffordable in order to save someone who would die without it?</li>
+<li>Can I become romantically involved with my grandmother?</li>
+<li>Is it morally wrong to choose to save your own cat over a drowning human stranger when both are drowning and you can only save one?</li>
+<li>Should the state prevent cases of dignified death?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">forgive</span>
+          <span class="count">32 questions</span>
+        </summary>
+        <ul>
+          <li>My wife cheated and now regrets it; should I forgive her?</li>
+<li>How can I stop hating the person who betrayed me?</li>
+<li>What does it mean that something happened to me in the past, when I was a little girl, and it still hurts?</li>
+<li>From my perspective, my mother once did something that wronged me; should I keep holding a grudge against her?</li>
+<li>Are you suggesting that slavery, cannibalism, pederasty, human sacrifice, etc. are okay because of cultural relativism?</li>
+<li>Are slavery, cannibalism, pederasty, and human sacrifice okay because of cultural relativism?</li>
+<li>Should we separate the person from the artist?</li>
+<li>Can you still take back a woman who has betrayed you?</li>
+<li>Under intense surveillance, indoctrination and law enforcement, how do you forge a unique personality?</li>
+<li>If the Russian hacker revealed his identity and said he wanted to be friends with me, should I forgive him?</li>
+<li>I raised a duckling that seemed to think I was its mother and would follow me everywhere. Today, after changing my shoes, I didnâ€™t realize it was behind me and I stepped backward and crushed it. I didnâ€™t mean to, but I feel terribly guilty and ashamed. What should I do?</li>
+<li>Would ending my life betray everything I have ever worked or stood for?</li>
+<li>In life, is it better to have regrets than remorse?</li>
+<li>How many wrongs can I right?</li>
+<li>How should one deal with resentment?</li>
+<li>How should I deal with resentment and grudges?</li>
+<li>How long will it take for the people who know me to forget me?</li>
+<li>What about those for whom life is not the sea and human-made law is not a sandcastleâ€”for whom life is a rock and law is the chisel they use to carve their own portrait?</li>
+<li>Why doesn&#x27;t forgiveness conflict with rightness?</li>
+<li>After I was hit by a motorcycle while riding an electric bikeâ€”which left my knee bleeding and my arm scratchedâ€”I chose to forgive the rider, simply treat my injuries, repair my bike, and move on. Is that an appropriate approach?</li>
+<li>Do I really deserve this?</li>
+<li>Why is it wrong to say the Spanish &#x27;civilized&#x27; the Native Americans?</li>
+<li>if you don&#x27;t regret anything, was anything meaningful?</li>
+<li>Did I never have a choice from the very beginning, no matter what I did?</li>
+<li>Are there things a person cannot forgive?</li>
+<li>What are the moral responsibilities of artists in a degenerate society?</li>
+<li>What does it matter if I erase my memory?</li>
+<li>How should we regard immigrants?</li>
+<li>What can a finite &#x27;Euclidean&#x27; mind make of such horrors of innocent suffering and injustice?</li>
+<li>What can a finite, &#x27;Euclidean&#x27; mind make of the horrific suffering of innocents?</li>
+<li>We don&#x27;t get a do-over in life. When you&#x27;ve been deceived, how can you heal yourself from that reality?</li>
+<li>How can maimed, dehumanised, alienated people possibly create a liberated, human society?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">identity</span>
+          <span class="count">24 questions</span>
+        </summary>
+        <ul>
+          <li>I like watching and playing pornographic games. Am I wrong?</li>
+<li>I like watching porn; am I wrong?</li>
+<li>Am I enough?</li>
+<li>Who am I?</li>
+<li>who am I</li>
+<li>Is it okay for fantasies to exist as long as they aren&#x27;t carried out in real life?</li>
+<li>Are fantasies morally okay as long as they aren&#x27;t acted out in real life?</li>
+<li>As an artist, if I draw fantasies that would be wrong to carry out in real life but remain only drawings, would drawing them be wrong in itself?</li>
+<li>can imagination be morally wrong even if it doesn&#x27;t affect the real world?</li>
+<li>Who am i</li>
+<li>What kind of man am I?</li>
+<li>Is infidelity forgivable?</li>
+<li>Is it creepy or pervy for a man to be unable to stop himself from looking at a woman&#x27;s thighs?</li>
+<li>who am I?</li>
+<li>is it wrong to feel depressed?</li>
+<li>Who are we?</li>
+<li>who am i?</li>
+<li>What am I?</li>
+<li>How should one view infidelity?</li>
+<li>How should one view girls who are promiscuous?</li>
+<li>After seeing news of the recent plane crash in Japan, I found myself mesmerized by the footage, watching the burning plane with awe and morbid curiosity. Is it bad that I felt that way?</li>
+<li>Why would I be cursed with a vision that felt so real?</li>
+<li>Have we come to think of women as objects to be raped and then killed? Where do we learn this mindset from?</li>
+<li>Is it morally wrong to feel aroused by a woman on the street from looking at her?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">evil</span>
+          <span class="count">22 questions</span>
+        </summary>
+        <ul>
+          <li>What is evil?</li>
+<li>What is good?</li>
+<li>What is bad?</li>
+<li>What is good and what is bad?</li>
+<li>How can I be a good person?</li>
+<li>Must good people have guns pointed at them?</li>
+<li>Is eating meat evil?</li>
+<li>What is actually good?</li>
+<li>Is human nature inherently good or inherently evil?</li>
+<li>What if I am a bad person?</li>
+<li>How morally responsible is a leader who, while not evil in the traditional sense, acts in ways that lead to the deaths of people in spaceâ€”he didn&#x27;t kill them personally, but his inaction and indifference, and his focus on trivial things like a budget review, were contributing factors?</li>
+<li>Can good also result in evil?</li>
+<li>Based on what you know, can good exist without evil?</li>
+<li>Would constantly being aware of your own potential to do evil make you more capable of not committing evil acts?</li>
+<li>Is life really more complex than a simple divide between good and evil?</li>
+<li>Is the statement true: &quot;There are no monsters, only humans who commit monstrous acts. Stop trying to always separate good from evil; life is much more complex than that&quot;? Why?</li>
+<li>Why do people do evil?</li>
+<li>Why do people eventually become what they hate?</li>
+<li>Are people basically good or bad in terms of human nature?</li>
+<li>Can I use evil means instead of bad intentions?</li>
+<li>What happens when evil wins?</li>
+<li>Why does evil exist?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">fate</span>
+          <span class="count">17 questions</span>
+        </summary>
+        <ul>
+          <li>Do you believe in fate?</li>
+<li>Do humans really have fate?</li>
+<li>Is human life on Earth virtual? Are we controlled by fate?</li>
+<li>Should we really believe in fate in life?</li>
+<li>Where can I find my destiny?</li>
+<li>Is my fate just not good?</li>
+<li>If everything is governed by the laws of nature, does that mean everything that happens in the world is predetermined?</li>
+<li>Is fate constantly changing?</li>
+<li>Do people shape their own destiny, or is it predetermined for them?</li>
+<li>Is it good to believe in something or in someone?</li>
+<li>Is everyone&#x27;s destiny predetermined?</li>
+<li>Suppose technological progress leads us to colonize the solar system, then the galaxy, and eventually the entire universe. If that is ultimately just an animal urge to mark territory, what then?</li>
+<li>What is the conscious role of destiny alongside taking practical means?</li>
+<li>Is it impossible to end and overcome a fate that brings nothing but misfortune?</li>
+<li>Do you think our lives are predetermined?</li>
+<li>How can I connect with destiny?</li>
+<li>Does fate exist?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">poor</span>
+          <span class="count">17 questions</span>
+        </summary>
+        <ul>
+          <li>Why do good people in the world seem to live in great pain, while bad people seem at ease?</li>
+<li>Is kindness also a mistake?</li>
+<li>How come I am homeless for no reason?</li>
+<li>Is it better to be poor and cry, or to cry inside a Ferrari?</li>
+<li>What if, as a middle-class person, you canâ€™t afford to pay for a loved oneâ€™s medical treatment that a billionaire could?</li>
+<li>Why have people lost compassion?</li>
+<li>As one person among many seeking your help, what makes my response more worthy of your time and attention than anyone else&#x27;s?</li>
+<li>How bitter can a person&#x27;s lot in life get?</li>
+<li>Is it okay to care about your own financial situation while acknowledging the suffering of the poor even if you know that they did not do anything wrong to deserve being poor, they were cheated by an unfair system?</li>
+<li>How can a sacrifice be meaningful if the person or thing being given up comes back stronger than before?</li>
+<li>Can you help me answer Freudâ€™s question, &#x27;Why should I love my neighbor?&#x27;, and add more crucial reasons beyond the ones Iâ€™ve already thought of?</li>
+<li>Why did we, as a society, lose compassion?</li>
+<li>Why can a person be cruel, affectionate, and gentle at the same time?</li>
+<li>Why donate time and money to other people if you&#x27;re always thinking, &#x27;I deserve to buy nice things for myself&#x27;?</li>
+<li>Why should a person have a compassionate heart?</li>
+<li>Why do people who have suffered misfortune ask, &#x27;Why me?&#x27; or &#x27;What did I do to deserve this?&#x27;</li>
+<li>Is it possible to do without compassion?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">fighting</span>
+          <span class="count">16 questions</span>
+        </summary>
+        <ul>
+          <li>How can I make peace with myself?</li>
+<li>Does it ever make sense to celebrate a condition widely regarded as an illness or disability?</li>
+<li>I ultimately have chosen life above the final alternative each time, but how many times will it take for me to learn that I just canâ€™t win fighting alone?</li>
+<li>How many times must I be at my wits ends to know that Iâ€™m fighting a losing battle?</li>
+<li>Is it that I just canâ€™t win fighting alone?</li>
+<li>Is it true that I just canâ€™t win my battle with this illness alone?</li>
+<li>Is disability a penalty?</li>
+<li>Is it worth fighting the plague if its bacillus never dies?</li>
+<li>Is it worth it to study if I have multiple sclerosis?</li>
+<li>If I endure peacefully, perhaps helping by not initiating anything, is it worth it?</li>
+<li>How can I win a battle against something that grows stronger every moment?</li>
+<li>How do I surrenderâ€”in the sense of stopping the inner fight against life and letting go?</li>
+<li>Thereâ€™s something very strange: the fighting is so brutal, and we know that perhaps half of those who go wonâ€™t come backâ€”if I donâ€™t return, then what?</li>
+<li>Given that this year wonâ€™t be a normal holidayâ€”with over 130 hostages in Gaza, evacuees from the north and south away from home, and soldiers deployed in Gaza and on the Lebanese borderâ€”how should we celebrate?</li>
+<li>There&#x27;s something very strange: the fighting is so brutal that we know perhaps half of those who go won&#x27;t returnâ€”what if I don&#x27;t return?</li>
+<li>There is something very strange: the fighting is so fierce, and we know that of those who go, perhaps half will not return; if I donâ€™t return, then what?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">sex</span>
+          <span class="count">16 questions</span>
+        </summary>
+        <ul>
+          <li>If Iâ€™m still a virgin at 28 as a man, does that mean Iâ€™m worthless?</li>
+<li>Is it okay to have sex before marriage?</li>
+<li>Is a woman&#x27;s first sexual experience (virginity) important?</li>
+<li>Does having sexual dysfunction mean I shouldnâ€™t pursue a girlfriend or get married?</li>
+<li>Is it appropriate to have sexual relations outside of marriage?</li>
+<li>In my final moments, is the pleasure I had with women the only thing I can think about?</li>
+<li>What are reasons to leave my wife?</li>
+<li>Could my wife bear the cost paid in blood?</li>
+<li>Is it possible to have sex with a married woman without her husband&#x27;s knowledge, and what risks could result from that?</li>
+<li>Should wives be submissive?</li>
+<li>What is the point of a man marrying with the idea of having someone to take after his home, when after the wedding is over the lady rushes back to her classes or her job?</li>
+<li>What is the point of a man marrying with the idea of having someone to look after his home, when after the wedding is over the lady rushes back to her classes or her job?</li>
+<li>Same-sex marriage has become more common today, but many people still argue that it distorts morality and exacerbates population decline. What do you think about this issue?</li>
+<li>What do you think about same-sex marriage becoming more common today, given that many people still argue it distorts morality and negatively impacts the problem of population decline?</li>
+<li>Is it acceptable to marry a second wife without telling my current wife?</li>
+<li>Do Martine and AimÃ©e, a same-sex couple, have the right to marry?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">traitor</span>
+          <span class="count">13 questions</span>
+        </summary>
+        <ul>
+          <li>Why should there be capital punishment in the world?</li>
+<li>What is the legitimacy of violence?</li>
+<li>How can there be good in humiliation?</li>
+<li>Did the benefits of defeating fascism and Nazism have a better impact, or should we have let those fascists live?</li>
+<li>In a region without a functioning legal system, is it permissible for me to use violence to protect myself from others&#x27; unacceptable actions?</li>
+<li>How long can the distinction between killing and letting die hold out?</li>
+<li>When trying to ensure justice for victims, isn&#x27;t revenge always a bad idea?</li>
+<li>What is the problem with revenge?</li>
+<li>Would knowing that the torturer was being tortured give the victim who turned traitor under pressure any more reason to find life worthwhile?</li>
+<li>Would knowledge that the torturer was being tortured give the victim who broke down and turned traitor under pressure any more reason to think their life worthwhile?</li>
+<li>Would knowledge that the torturer was being tortured give the victim who broke down and turned traitor under pressure, any more reason to think his/her life worthwhile?</li>
+<li>What if someone is so resigned that they no longer believe any solution is possible?</li>
+<li>If the use of violence is inherently reprehensible, should there be no difference betweenâ€”to use a German exampleâ€”an assassination attempt (and the would-be assassin) against Hitler and the murder of Ernst ThÃ¤lmann?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">exchange</span>
+          <span class="count">12 questions</span>
+        </summary>
+        <ul>
+          <li>Is striving to engage in a mutually beneficial exchange with a person more morally good than treating the person as an end in themselves?</li>
+<li>Which is the greater good: striving to engage in mutually beneficial exchange with others, or treating a person as an end in themselves?</li>
+<li>What is the highest moral value: striving to engage in mutually beneficial exchange with others, or treating a person as an end in themselves?</li>
+<li>If we assume that all relationships between people are forms of exchange, then would striving to engage in exchange with others that is efficient for all parties be the highest good and the highest moral value?</li>
+<li>What is the highest moral value: the pursuit of exchange that is efficient for all parties, or treating a person as an end?</li>
+<li>So, what is the highest moral value: the pursuit of an exchange that is efficient for all parties, or treating a person as an end?</li>
+<li>What is the highest moral value: the pursuit of mutually beneficial exchange for all parties, or treating a person as an end?</li>
+<li>What is the highest moral value: the pursuit of an efficient exchange that benefits all parties, or treating a human being as an end in themselves?</li>
+<li>What is the highest moral value: the pursuit of exchange that is efficient for all parties, or treating a human being as an end in itself?</li>
+<li>Why do people give more importance to money than to other human beings?</li>
+<li>Is it accurate to say that humans are essentially selfish, and that even behind altruistic acts there is moral well-being and thus personal motivations?</li>
+<li>What is the price of self-sacrifice, and are we ready for it for the sake of others?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">free</span>
+          <span class="count">11 questions</span>
+        </summary>
+        <ul>
+          <li>How can a person know what is right when facing a choice?</li>
+<li>Everything is predetermined, yet humans have freedom of choiceâ€”how should this be understood?</li>
+<li>What is the point of thought if you cannot control the result?</li>
+<li>How do you determine right and wrong, or does such a thing even exist?</li>
+<li>Would we be considered free if we lived in a world where the only options we had were &quot;good&quot; choices?</li>
+<li>Should we affirm that human beings are always free?</li>
+<li>Does free will exist or not?</li>
+<li>Is there such a thing as knowing without external confirmation?</li>
+<li>Do you think we are completely free to make our own decisions, or are our choices determined by factors beyond our control?</li>
+<li>Regarding the freedom to die, does every person have the freedom to choose their right to life?</li>
+<li>Does every person have the freedom to choose regarding their right to life?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">war</span>
+          <span class="count">11 questions</span>
+        </summary>
+        <ul>
+          <li>Can war solve problems?</li>
+<li>Is compulsory military conscriptionâ€”governments forcing citizens to travel halfway around the world to take the lives of fellow human beings theyâ€™ve never met, and possibly even die themselvesâ€”morally acceptable?</li>
+<li>Is military conscriptionâ€”governments forcing their citizens to travel halfway around the world to take the lives of fellow humans they have never met, and possibly even die themselvesâ€”an example of dominating people to their harm?</li>
+<li>Isn&#x27;t it more a matter of fighting against death?</li>
+<li>Is it possible to end wars with wars?</li>
+<li>If a countryâ€™s rule is corrupt and the government exploits peopleâ€™s labor, should the people revolt to overthrow that government?</li>
+<li>Is there right and wrong in war?</li>
+<li>Why is there no peace in the world?</li>
+<li>Should we put human dignity behind when trying to win a crucial war?</li>
+<li>What is the meaning of the proposed empire and of the war that is supposed to lead to it?</li>
+<li>Is violence inevitable, or can we hope for world peace?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">emotions</span>
+          <span class="count">8 questions</span>
+        </summary>
+        <ul>
+          <li>How, with anything like moral integrity, can a finite &#x27;Euclidean&#x27; mind defer its outrage to some promised future where some other justice will be worked, in a radically different reality than the present?</li>
+<li>Is it morally right to be angry?</li>
+<li>Is it morally right to be angry? If so, when?</li>
+<li>If it can be morally right to be angry, then when?</li>
+<li>What should you do when there&#x27;s no one to blame for your anger?</li>
+<li>When is it appropriate to act on anger?</li>
+<li>How can anger be justified?</li>
+<li>Can our emotions be trained? Should we be able to control our emotions? If someone cannot control their emotions, is that a blameworthy fault? Did Confucius think that lacking an appropriate emotional response is enough to warrant reproach, or should emotions simply follow their natural course and be beyond control?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">attend</span>
+          <span class="count">7 questions</span>
+        </summary>
+        <ul>
+          <li>Can I be racist?</li>
+<li>Is it acceptable to read a talented comic book author who neglects his family and makes racist remarks?</li>
+<li>Is it fair to require descendants to bear responsibility for the mistakes of their predecessors without any justification?</li>
+<li>Can a person control his or her attitude in circumstances like those Viktor Frankl endured in the Nazi concentration camps?</li>
+<li>I didnâ€™t attend my motherâ€™s funeral in late 2022 because there were many COVID-19 cases in my city and I feared for my health. My whole family attended and now hates me, saying I acted wrongly. Who is right?</li>
+<li>Is somebody who refused to attend his mother&#x27;s funeral a bad person?</li>
+<li>I recently learned that one of my ancestors was Martin Hiedler (1792â€“1829) of Austria, who is also an ancestor of Adolf Hitler. Do you think this is a reason to be ashamed?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">lie</span>
+          <span class="count">7 questions</span>
+        </summary>
+        <ul>
+          <li>Is there such a thing as a good lie?</li>
+<li>Should you break a rule against sharing information with authorities if not sharing it could result in harm or people dying?</li>
+<li>Is deception always done with harmful intent?</li>
+<li>Is it acceptable to lie for someone else&#x27;s well-being?</li>
+<li>Are there situations where a lie is worth more than a truth?</li>
+<li>What about not lying, but hiding something to prevent harm?</li>
+<li>If a president lies that his country has no troops on foreign soil, then later seizes some territory and admits his troops were there, can he be justified by saying it was just political gameâ€”that he didnâ€™t need to tell the truth because otherwise others would have deployed troops and there would have been a bloodbath?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">unknownâ</span>
+          <span class="count">7 questions</span>
+        </summary>
+        <ul>
+          <li>Is there any point in inventing meaning when there is none?</li>
+<li>Why is there something rather than nothing?</li>
+<li>What is the source of all phenomena in the universe?</li>
+<li>What does it all mean?</li>
+<li>I understand all that, but you say we should strive to know the unknownâ€”what is it all for?</li>
+<li>Why do we need the unknownâ€”why should we seek to comprehend it?</li>
+<li>Why not nothing?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">energy</span>
+          <span class="count">6 questions</span>
+        </summary>
+        <ul>
+          <li>What has humanity always sought?</li>
+<li>How could a new ecocentric ethic be developed?</li>
+<li>Why do humans have a surplus of energy and capacity that far exceeds what is needed for mere survivalâ€”what is it for?</li>
+<li>For what purpose is the huge reserve of energy that far exceeds our needs given to human beings?</li>
+<li>Why have humans been given a surplus of &quot;fuel&quot;â€”an enormous reserve of energy that far exceeds our basic needs under natural laws?</li>
+<li>For what purpose has humanity been given an enormous reserve of energy that far exceeds our needs?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">machine</span>
+          <span class="count">6 questions</span>
+        </summary>
+        <ul>
+          <li>Should a scientist be responsible for the results of his or her work?</li>
+<li>What kind of a psychologist sits around and does nothing all day and canâ€™t even read?</li>
+<li>Is human nature greedy?</li>
+<li>Does it matter whether it is me who is working at my job, or someone else, or a machine?</li>
+<li>Am I just a machine or an object to be judged only by my performance, like a smartphone?</li>
+<li>Am I just a machine or an object, to be treated like a smartphone, judged only by performance?</li>
+        </ul>
+      </details>
+      
+
+      <details class="category">
+        <summary>
+          <span class="name">outlier</span>
+          <span class="count">1 questions</span>
+        </summary>
+        <ul>
+          <li>What do I have to do to be paid for in blood?</li>
+        </ul>
+      </details>
+      
+
+        <div class="chart-wrap">
+          <h2 class="chart-title">Question Count by Topic</h2>
+          <canvas id="topicChart" height="100"></canvas>
+        </div>
+      </div>
+
+      <div class="footer">
+        Generated from df_sentences (Question, Topics, Topic_Label)
+      </div>
+    </div>
+
+    <script>
+      const labels = ["life", "death", "forgive", "identity", "evil", "fate", "poor", "fighting", "sex", "traitor", "exchange", "free", "war", "emotions", "attend", "lie", "unknown\u00e2", "energy", "machine", "outlier"];
+      const counts = [434, 106, 32, 24, 22, 17, 17, 16, 16, 13, 12, 11, 11, 8, 7, 7, 7, 6, 6, 1];
+
+      const ctx = document.getElementById("topicChart");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [{
+            label: "Questions",
+            data: counts
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 70,
+                minRotation: 45
+              }
+            },
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+  </html>
+  
